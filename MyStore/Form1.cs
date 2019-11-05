@@ -12,6 +12,8 @@ namespace MyStore
 {
     public partial class Form1 : Form
     {
+        int x = 0;
+        int y = 3;
         public Form1()
         {
             InitializeComponent();
