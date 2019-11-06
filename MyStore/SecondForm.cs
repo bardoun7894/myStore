@@ -10,13 +10,21 @@ using System.Windows.Forms;
 
 namespace MyStore
 {
-    public partial class Form1 : Form
+    public partial class SecondForm : Form
     {
-        int x = 0;
-        int y = 3;
-        public Form1()
+        public SecondForm()
         {
             InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
