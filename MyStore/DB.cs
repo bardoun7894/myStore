@@ -11,9 +11,9 @@ using System.Data;
     class DB
     {
      
-    string con = ConfigurationManager.ConnectionStrings[""].ConnectionString.ToString();
+    string con = ConfigurationManager.ConnectionStrings["mycon"].ConnectionString.ToString();
     SqlConnection cn;
-    SqlCommand cmd;
+    SqlCommand cmd =new SqlCommand();
     DataTable dt;
     SqlDataAdapter ad = new SqlDataAdapter();
     public SqlConnection sqlFire()
@@ -37,10 +37,7 @@ using System.Data;
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = sql;
             val = cmd.ExecuteScalar();
-            if (val == null)
-            {
-                return "";
-            }
+            if (val == null)  {  return ""; }
             return val.ToString();
 
         } catch
