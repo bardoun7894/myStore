@@ -41,11 +41,22 @@ namespace MyStore
 
             String sql = @"INSERT INTO  Branches  (branch_name) VALUES (N'{0}')";
 
-             
-
+        
             db.excuteSql(string.Format(sql, textBoxBranch.Text));
  
             MessageBox.Show("تم الحفظ");
+
+        }
+
+        private void frmBranchAdd_Load(object sender, EventArgs e)
+        {
+
+            // اظهار جدول  فروع الشركات داتابايز
+            String sql = @" SELECT [branch_id] ,[branch_name]  FROM [dbo].[Branches]";
+            DataTable dt = db.excuteDataTable(String.Format(sql));
+            dataGridView1.DataSource = dt;
+            dataGridView1.Refresh();
+
 
         }
     }

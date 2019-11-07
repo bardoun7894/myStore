@@ -53,7 +53,7 @@ using System.Data;
         }
     }
     //FUNCTION TABLE
-    public DataTable excuteDT(string sql){
+    public DataTable excuteDataTable  (string sql){
         try { 
         dt = new DataTable();
             if (cn.State == ConnectionState.Closed) { cn.Open(); }
