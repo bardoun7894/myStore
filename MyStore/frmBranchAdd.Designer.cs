@@ -33,13 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblId = new System.Windows.Forms.Label();
             this.bfbEdit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bfbDelete = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxBranch = new System.Windows.Forms.TextBox();
             this.btnSaveBranch = new System.Windows.Forms.Button();
-            this.lblId = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,18 @@
             this.groupBox1.Text = "فروع الشركة";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Enabled = false;
+            this.lblId.Location = new System.Drawing.Point(421, 10);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(35, 14);
+            this.lblId.TabIndex = 7;
+            this.lblId.Text = "label2";
+            this.lblId.Visible = false;
+            this.lblId.Click += new System.EventHandler(this.label2_Click);
+            // 
             // bfbEdit
             // 
             this.bfbEdit.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -83,7 +95,7 @@
             this.bfbEdit.IconVisible = true;
             this.bfbEdit.IconZoom = 90D;
             this.bfbEdit.IsTab = false;
-            this.bfbEdit.Location = new System.Drawing.Point(116, 59);
+            this.bfbEdit.Location = new System.Drawing.Point(262, 59);
             this.bfbEdit.Name = "bfbEdit";
             this.bfbEdit.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bfbEdit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -102,10 +114,11 @@
             this.bfbDelete.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bfbDelete.BackColor = System.Drawing.Color.Red;
             this.bfbDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bfbDelete.BorderRadius = 0;
-            this.bfbDelete.ButtonText = "حدف";
+            this.bfbDelete.BorderRadius = 1;
+            this.bfbDelete.ButtonText = "   حذف";
             this.bfbDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bfbDelete.DisabledColor = System.Drawing.Color.Gray;
+            this.bfbDelete.Font = new System.Drawing.Font("هشام غرناطة طبيعي", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.bfbDelete.Iconcolor = System.Drawing.Color.Transparent;
             this.bfbDelete.Iconimage = ((System.Drawing.Image)(resources.GetObject("bfbDelete.Iconimage")));
             this.bfbDelete.Iconimage_right = null;
@@ -116,9 +129,9 @@
             this.bfbDelete.IconRightVisible = true;
             this.bfbDelete.IconRightZoom = 0D;
             this.bfbDelete.IconVisible = true;
-            this.bfbDelete.IconZoom = 90D;
+            this.bfbDelete.IconZoom = 60D;
             this.bfbDelete.IsTab = false;
-            this.bfbDelete.Location = new System.Drawing.Point(0, 59);
+            this.bfbDelete.Location = new System.Drawing.Point(134, 59);
             this.bfbDelete.Name = "bfbDelete";
             this.bfbDelete.Normalcolor = System.Drawing.Color.Red;
             this.bfbDelete.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -126,7 +139,7 @@
             this.bfbDelete.selected = false;
             this.bfbDelete.Size = new System.Drawing.Size(86, 33);
             this.bfbDelete.TabIndex = 4;
-            this.bfbDelete.Text = "حدف";
+            this.bfbDelete.Text = "   حذف";
             this.bfbDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bfbDelete.Textcolor = System.Drawing.Color.White;
             this.bfbDelete.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,24 +225,12 @@
             this.btnSaveBranch.UseVisualStyleBackColor = true;
             this.btnSaveBranch.Click += new System.EventHandler(this.btnSaveBranch_Click);
             // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Enabled = false;
-            this.lblId.Location = new System.Drawing.Point(421, 10);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(35, 14);
-            this.lblId.TabIndex = 7;
-            this.lblId.Text = "label2";
-            this.lblId.Visible = false;
-            this.lblId.Click += new System.EventHandler(this.label2_Click);
-            // 
             // frmBranchAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(209)))), ((int)(((byte)(247)))));
-            this.ClientSize = new System.Drawing.Size(527, 450);
+            this.ClientSize = new System.Drawing.Size(531, 450);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmBranchAdd";

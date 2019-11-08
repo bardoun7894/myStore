@@ -31,5 +31,13 @@ namespace MyStore
         {
 
         }
+        //اضفنا الفروع الى الحاوية
+        private void الفروعToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+            frmBranchAdd frm = new frmBranchAdd();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

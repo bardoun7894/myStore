@@ -34,6 +34,8 @@
             this.المخازنToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.العملاءToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.الموردينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.الفروعToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mdiFrm = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +44,8 @@
             this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.الاعداداتToolStripMenuItem,
             this.العملاءToolStripMenuItem,
-            this.الموردينToolStripMenuItem});
+            this.الموردينToolStripMenuItem,
+            this.الفروعToolStripMenuItem});
             this.menuStrip3.Location = new System.Drawing.Point(0, 0);
             this.menuStrip3.Name = "menuStrip3";
             this.menuStrip3.Size = new System.Drawing.Size(800, 24);
@@ -53,7 +56,8 @@
             // 
             this.الاعداداتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.الشاشةالرئيسيةToolStripMenuItem,
-            this.المخازنToolStripMenuItem});
+            this.المخازنToolStripMenuItem,
+            this.mdiFrm});
             this.الاعداداتToolStripMenuItem.Name = "الاعداداتToolStripMenuItem";
             this.الاعداداتToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.الاعداداتToolStripMenuItem.Text = "الاعدادات";
@@ -84,14 +88,27 @@
             this.الموردينToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.الموردينToolStripMenuItem.Text = "الموردين";
             // 
-            // mdiClass
+            // الفروعToolStripMenuItem
+            // 
+            this.الفروعToolStripMenuItem.Name = "الفروعToolStripMenuItem";
+            this.الفروعToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.الفروعToolStripMenuItem.Text = "الفروع";
+            // 
+            // mdiFrm
+            // 
+            this.mdiFrm.Name = "mdiFrm";
+            this.mdiFrm.Size = new System.Drawing.Size(180, 22);
+            this.mdiFrm.Text = "الفروع";
+            this.mdiFrm.Click += new System.EventHandler(this.الفروعToolStripMenuItem1_Click);
+            // 
+            // MdiClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip3);
             this.IsMdiContainer = true;
-            this.Name = "mdiClass";
+            this.Name = "MdiClass";
             this.Text = "mdiClass";
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
@@ -108,5 +125,7 @@
         private System.Windows.Forms.ToolStripMenuItem المخازنToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem العملاءToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem الموردينToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mdiFrm;
+        private System.Windows.Forms.ToolStripMenuItem الفروعToolStripMenuItem;
     }
 }
