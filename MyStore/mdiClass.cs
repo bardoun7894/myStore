@@ -99,5 +99,12 @@ namespace MyStore
         {
 
         }
+
+        private void اضافةموردجديدToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVendorsAdd fs = new FrmVendorsAdd("2");
+            fs.MdiParent = this;
+            fs.Show();
+        }
     }
 }
