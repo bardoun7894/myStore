@@ -58,11 +58,35 @@
     <Compile Include="frmBranchAdd.Designer.cs">
       <DependentUpon>frmBranchAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBranches_store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBranches_store.Designer.cs">
+      <DependentUpon>frmBranches_store.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings.Designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnits.Designer.cs">
+      <DependentUpon>FrmUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVendorsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVendorsAdd.Designer.cs">
+      <DependentUpon>FrmVendorsAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="MdiClass.cs">
       <SubType>Form</SubType>
@@ -70,25 +94,49 @@
     <Compile Include="MdiClass.Designer.cs">
       <DependentUpon>MdiClass.cs</DependentUpon>
     </Compile>
-    <Compile Include="SecondForm.cs">
+    <Compile Include="OriginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SecondForm.Designer.cs">
-      <DependentUpon>SecondForm.cs</DependentUpon>
+    <Compile Include="OriginPage.Designer.cs">
+      <DependentUpon>OriginPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmOrders_kind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrders_kind.Designer.cs">
+      <DependentUpon>FrmOrders_kind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsers_kind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsers_kind.Designer.cs">
+      <DependentUpon>FrmUsers_kind.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmBranchAdd.resx">
       <DependentUpon>frmBranchAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBranches_store.resx">
+      <DependentUpon>frmBranches_store.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnits.resx">
+      <DependentUpon>FrmUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVendorsAdd.resx">
+      <DependentUpon>FrmVendorsAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MdiClass.resx">
       <DependentUpon>MdiClass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SecondForm.resx">
-      <DependentUpon>SecondForm.cs</DependentUpon>
+    <EmbeddedResource Include="OriginPage.resx">
+      <DependentUpon>OriginPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +148,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="FrmOrders_kind.resx">
+      <DependentUpon>FrmOrders_kind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsers_kind.resx">
+      <DependentUpon>FrmUsers_kind.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
