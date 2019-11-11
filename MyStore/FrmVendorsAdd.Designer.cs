@@ -202,6 +202,7 @@
             this.Name = "FrmVendorsAdd";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "FrmVendorsAdd";
+            this.Load += new System.EventHandler(this.FrmVendorsAdd_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

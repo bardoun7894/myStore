@@ -12,9 +12,17 @@ namespace MyStore
 {
     public partial class FrmVendorsAdd : Form
     {
-        public FrmVendorsAdd()
+        //اضافة المورد
+        String user_kind_id = "";
+
+        public FrmVendorsAdd(string kind_user)
         {
             InitializeComponent();
+        }
+
+        private void FrmVendorsAdd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
