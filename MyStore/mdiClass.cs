@@ -97,12 +97,26 @@ namespace MyStore
 
         private void الموردToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void اضافةموردجديدToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmVendorsAdd fs = new FrmVendorsAdd("2");
+            FrmUsers fs = new FrmUsers("2");
+            fs.MdiParent = this;
+            fs.Show();
+        }
+
+        private void الفروعToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsers fs = new FrmUsers("1");
+            fs.MdiParent = this;
+            fs.Show();
+        }
+
+        private void kksksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsers fs = new FrmUsers("3");
             fs.MdiParent = this;
             fs.Show();
         }

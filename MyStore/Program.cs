@@ -27,7 +27,7 @@ namespace MyStore
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OriginPage());
+            Application.Run(new MdiClass());
         }
     }
 }

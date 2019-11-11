@@ -41,6 +41,7 @@
             this.المخازنToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.الموردToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.اضافةموردجديدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kksksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             this.الاعداداتToolStripMenuItem,
             this.الفروعToolStripMenuItem,
             this.المخازنToolStripMenuItem,
-            this.الموردToolStripMenuItem});
+            this.الموردToolStripMenuItem,
+            this.kksksToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1106, 24);
@@ -125,6 +127,7 @@
             this.الفروعToolStripMenuItem.Name = "الفروعToolStripMenuItem";
             this.الفروعToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.الفروعToolStripMenuItem.Text = "الفروع";
+            this.الفروعToolStripMenuItem.Click += new System.EventHandler(this.الفروعToolStripMenuItem_Click);
             // 
             // المخازنToolStripMenuItem
             // 
@@ -145,9 +148,16 @@
             // اضافةموردجديدToolStripMenuItem
             // 
             this.اضافةموردجديدToolStripMenuItem.Name = "اضافةموردجديدToolStripMenuItem";
-            this.اضافةموردجديدToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.اضافةموردجديدToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.اضافةموردجديدToolStripMenuItem.Text = "اضافة مورد جديد";
             this.اضافةموردجديدToolStripMenuItem.Click += new System.EventHandler(this.اضافةموردجديدToolStripMenuItem_Click);
+            // 
+            // kksksToolStripMenuItem
+            // 
+            this.kksksToolStripMenuItem.Name = "kksksToolStripMenuItem";
+            this.kksksToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.kksksToolStripMenuItem.Text = "kksks";
+            this.kksksToolStripMenuItem.Click += new System.EventHandler(this.kksksToolStripMenuItem_Click);
             // 
             // MdiClass
             // 
@@ -184,5 +194,6 @@
         private System.Windows.Forms.ToolStripMenuItem اعداداتالشركةToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem الموردToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem اضافةموردجديدToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kksksToolStripMenuItem;
     }
 }
