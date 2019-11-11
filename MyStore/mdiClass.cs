@@ -106,19 +106,21 @@ namespace MyStore
             fs.MdiParent = this;
             fs.Show();
         }
+ 
+
+        private void ClientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsers fs = new FrmUsers("3");
+            fs.MdiParent = this;
+            fs.Show();
+        }
 
         private void الفروعToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmUsers fs = new FrmUsers("1");
             fs.MdiParent = this;
             fs.Show();
-        }
 
-        private void kksksToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmUsers fs = new FrmUsers("3");
-            fs.MdiParent = this;
-            fs.Show();
         }
     }
 }

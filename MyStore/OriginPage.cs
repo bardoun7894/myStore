@@ -104,5 +104,17 @@ namespace MyStore
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+
+            FrmUsersShow f = new FrmUsersShow();
+            f.TopLevel = false;
+            panel3.BackColor =  Color.FromArgb(45, 63, 88);
+            panel3.Controls.Add(f);
+            f.MaximizeBox = true;
+            f.BringToFront();
+            f.Show();
+        }
     }
 }
