@@ -97,7 +97,9 @@ namespace MyStore
 
         private void الموردToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          
+            FrmUsersShow frm = new FrmUsersShow("3");
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void اضافةموردجديدToolStripMenuItem_Click(object sender, EventArgs e)
@@ -120,6 +122,29 @@ namespace MyStore
             FrmUsers fs = new FrmUsers("1");
             fs.MdiParent = this;
             fs.Show();
+
+        }
+
+        private void بحثعنعميلToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsersShow frm = new FrmUsersShow("1");
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void موضفToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsersShow frm = new FrmUsersShow("2");
+            frm.MdiParent = this;
+            frm.Show();
+
+        }
+
+        private void بحثعنموردينToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsersShow frm = new FrmUsersShow("3");
+            frm.MdiParent = this;
+            frm.Show();
 
         }
     }

@@ -12,10 +12,14 @@ namespace MyStore
 {
     public partial class FrmUsersShow : Form
     {
+
+        string kind_user_id = "";
         DB db = new DB();
-        public FrmUsersShow()
+        
+        public FrmUsersShow(string user_kind_id)
         {
             InitializeComponent();
+            kind_user_id = user_kind_id;
         }
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -25,6 +29,28 @@ namespace MyStore
 
         private void FrmUsersShow_Load(object sender, EventArgs e)
         {
+
+
+            if (kind_user_id == "1")
+            {
+                lbluser.Text = "العملاء";
+
+            }
+            if (kind_user_id == "2")
+            {
+                lbluser.Text = "الموظفين";
+
+            }
+            if (kind_user_id == "3")
+            {
+                lbluser.Text = "الموردين";
+
+            }
+            this.Text = lbluser.Text;
+
+
+
+
             String sql = @" SELECT [branch_id] ,[branch_name]  FROM [dbo].[Branches]";
             DataTable dt = db.excuteDataTable(String.Format(sql));
             comboBox1.DataSource = dt;
@@ -60,6 +86,10 @@ namespace MyStore
             {
                 condition += " and Users.branch_id = '" + comboBox1.SelectedValue+ " '";
             }
+          if (kind_user_id != "")
+                   {
+           condition += " and dbo.Users_kind.user_kind_id = '" + kind_user_id + " '";
+                }
 
             DataTable dt = db.excuteDataTable(sql + condition);
             bunifuCustomDataGrid1.DataSource = dt;

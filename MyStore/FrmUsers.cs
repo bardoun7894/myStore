@@ -32,14 +32,14 @@ namespace MyStore
             textBoxcode.Text = x.ToString();
             if (user_kind_id == "1")
             {
-                lblKind.Text = "عملاء";
+                lblKind.Text = "العملاء";
                 textboxUser.Text = "";
                 textBoxPass.Text = "";
                 groupLogin.Visible = false;
             }
             if (user_kind_id == "2")
             {
-                lblKind.Text = "موردين";
+                lblKind.Text = "الموظفين";
                 textboxUser.Text = "";
                 textBoxPass.Text = "";
                 groupLogin.Visible = false;
@@ -47,7 +47,7 @@ namespace MyStore
             }
             if (user_kind_id == "3")
             {
-                lblKind.Text = "موظفين";
+                lblKind.Text = "الموردين";
                 groupLogin.Visible = true;
             }
             this.Text = lblKind.Text;

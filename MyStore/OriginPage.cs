@@ -108,9 +108,12 @@ namespace MyStore
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
 
-            FrmUsersShow f = new FrmUsersShow();
+            FrmUsersShow f = new FrmUsersShow("3");
             f.TopLevel = false;
-            panel3.BackColor =  Color.FromArgb(45, 63, 88);
+
+            // حليت مشكل ظهور اطار السابق تحت هذا لاطار ب الكود الي تحت
+
+            panel3.Controls.Clear();
             panel3.Controls.Add(f);
             f.MaximizeBox = true;
             f.BringToFront();
