@@ -118,24 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bfbEditBranches.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAAKlJREFUOE/V
-        kCEOwkAURNdhUbhaDoGqw2CaVNRwJ1x7GzgJjgNgSEVhedP8DTXksxBEX/LM35kRG+ZPjHGHLS7slA/l
-        Gu8ojpg/RmmJKzxjorPnz6CwwStWWOAFB9xaxIewRm4oVG5wjXuL+BAuMY0kNFZYxIewRno1JzywsYgP
-        4b+NjH9jER/C70Yqi/gQ/n1EUDiN1Rf5I4LSdOi7EUHxgBqTtZ1nSwhP4N452m4FlPMAAAAASUVORK5C
-        YII=
-</value>
-  </data>
-  <data name="bfbDeleteBranches.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAJVJREFUSEvl
-        jksKhTAQBHM+9T7eV/QajhEawU9byUZEC2bR71EV0z+IiD7mOXaXf9PfdZxClaeM50qqOWXu2YSIruhq
-        4ivPP1C4pTMuQFs64wK0pTMuQFs64wK0pTMuQFs64wK0pTMuQFs64wK0pTMuQFs64wK0pTOnAN0bHxi3
-        R8pvkM7kr2qzMB0Cdzdmp5H+KVJaAOTN/Y61CF0kAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnSaveBranchStore.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnClients.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAANJElEQVR4Xu3d

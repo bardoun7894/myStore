@@ -1,6 +1,6 @@
 ﻿namespace MyStore
 {
-    partial class FrmUsers
+    partial class FrmEditUser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsers));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditUser));
             this.groupLogin = new System.Windows.Forms.GroupBox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.textBoxPass = new System.Windows.Forms.TextBox();
@@ -46,33 +45,12 @@
             this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.lblKind = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblstore = new System.Windows.Forms.Label();
-            this.lblbranch = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupLogin.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.groupLogin);
-            this.groupBox1.Controls.Add(this.bunifuCustomLabel5);
-            this.groupBox1.Controls.Add(this.textBoxcode);
-            this.groupBox1.Controls.Add(this.bunifuCustomLabel4);
-            this.groupBox1.Controls.Add(this.textBoxAdresse);
-            this.groupBox1.Controls.Add(this.lbl);
-            this.groupBox1.Controls.Add(this.bunifuCustomLabel2);
-            this.groupBox1.Controls.Add(this.textBoxPhone);
-            this.groupBox1.Controls.Add(this.bunifuCustomLabel1);
-            this.groupBox1.Controls.Add(this.btnSave);
-            this.groupBox1.Controls.Add(this.textBoxName);
-            this.groupBox1.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(94, 32);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(728, 438);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "اضافة جديدة";
             // 
             // groupLogin
             // 
@@ -80,7 +58,7 @@
             this.groupLogin.Controls.Add(this.textBoxPass);
             this.groupLogin.Controls.Add(this.bunifuCustomLabel6);
             this.groupLogin.Controls.Add(this.textboxUser);
-            this.groupLogin.Location = new System.Drawing.Point(175, 256);
+            this.groupLogin.Location = new System.Drawing.Point(175, 289);
             this.groupLogin.Name = "groupLogin";
             this.groupLogin.Size = new System.Drawing.Size(444, 153);
             this.groupLogin.TabIndex = 35;
@@ -136,7 +114,6 @@
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(118, 29);
             this.bunifuCustomLabel5.TabIndex = 34;
             this.bunifuCustomLabel5.Text = "الكود التعريفي";
-            this.bunifuCustomLabel5.Click += new System.EventHandler(this.bunifuCustomLabel5_Click);
             // 
             // textBoxcode
             // 
@@ -245,7 +222,6 @@
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Textcolor = System.Drawing.Color.White;
             this.btnSave.TextFont = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // textBoxName
             // 
@@ -261,49 +237,71 @@
             this.lblKind.AutoSize = true;
             this.lblKind.Font = new System.Drawing.Font("MO_Nawel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblKind.ForeColor = System.Drawing.Color.White;
-            this.lblKind.Location = new System.Drawing.Point(424, 0);
+            this.lblKind.Location = new System.Drawing.Point(378, -10);
             this.lblKind.Name = "lblKind";
             this.lblKind.Size = new System.Drawing.Size(55, 32);
-            this.lblKind.TabIndex = 32;
+            this.lblKind.TabIndex = 34;
             this.lblKind.Text = "النوع";
             // 
-            // lblstore
+            // groupBox1
             // 
-            this.lblstore.AutoSize = true;
-            this.lblstore.Location = new System.Drawing.Point(23, 32);
-            this.lblstore.Name = "lblstore";
-            this.lblstore.Size = new System.Drawing.Size(35, 13);
-            this.lblstore.TabIndex = 33;
-            this.lblstore.Text = "label1";
+            this.groupBox1.Controls.Add(this.bunifuCustomLabel7);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.groupLogin);
+            this.groupBox1.Controls.Add(this.bunifuCustomLabel5);
+            this.groupBox1.Controls.Add(this.textBoxcode);
+            this.groupBox1.Controls.Add(this.bunifuCustomLabel4);
+            this.groupBox1.Controls.Add(this.textBoxAdresse);
+            this.groupBox1.Controls.Add(this.lbl);
+            this.groupBox1.Controls.Add(this.bunifuCustomLabel2);
+            this.groupBox1.Controls.Add(this.textBoxPhone);
+            this.groupBox1.Controls.Add(this.bunifuCustomLabel1);
+            this.groupBox1.Controls.Add(this.btnSave);
+            this.groupBox1.Controls.Add(this.textBoxName);
+            this.groupBox1.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(26, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(738, 448);
+            this.groupBox1.TabIndex = 33;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "تعديل";
             // 
-            // lblbranch
+            // textBox1
             // 
-            this.lblbranch.AutoSize = true;
-            this.lblbranch.Location = new System.Drawing.Point(23, 76);
-            this.lblbranch.Name = "lblbranch";
-            this.lblbranch.Size = new System.Drawing.Size(35, 13);
-            this.lblbranch.TabIndex = 34;
-            this.lblbranch.Text = "label1";
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(243, 267);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(216, 30);
+            this.textBox1.TabIndex = 36;
             // 
-            // FrmUsers
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(497, 267);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(101, 29);
+            this.bunifuCustomLabel7.TabIndex = 37;
+            this.bunifuCustomLabel7.Text = "تاريخ التسجيل";
+            // 
+            // FrmEditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
-            this.ClientSize = new System.Drawing.Size(925, 482);
-            this.Controls.Add(this.lblbranch);
-            this.Controls.Add(this.lblstore);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(773, 476);
             this.Controls.Add(this.lblKind);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
-            this.Name = "FrmUsers";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Text = "FrmVendorsAdd";
-            this.Load += new System.EventHandler(this.FrmVendorsAdd_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Controls.Add(this.groupBox1);
+            this.Name = "FrmEditUser";
+            this.Text = "FrmEditUser";
             this.groupLogin.ResumeLayout(false);
             this.groupLogin.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,8 +309,13 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblKind;
+        private System.Windows.Forms.GroupBox groupLogin;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
+        private System.Windows.Forms.TextBox textBoxPass;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private System.Windows.Forms.TextBox textboxUser;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
+        private System.Windows.Forms.TextBox textBoxcode;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private System.Windows.Forms.TextBox textBoxAdresse;
         private System.Windows.Forms.Label lbl;
@@ -321,14 +324,9 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuFlatButton btnSave;
         private System.Windows.Forms.TextBox textBoxName;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private System.Windows.Forms.TextBox textBoxcode;
-        private System.Windows.Forms.GroupBox groupLogin;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private System.Windows.Forms.TextBox textBoxPass;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
-        private System.Windows.Forms.TextBox textboxUser;
-        private System.Windows.Forms.Label lblstore;
-        private System.Windows.Forms.Label lblbranch;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblKind;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

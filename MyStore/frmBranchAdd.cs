@@ -74,33 +74,7 @@ namespace MyStore
 
         }
 
-        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-//اختيار اسم الفرع من جدول الفروع واصافته في تكست بوكس
-            if (bunifuCustomDataGrid1.SelectedCells.Count > 0)
-            {
-                int rowindex = bunifuCustomDataGrid1.SelectedCells[0].RowIndex;
-                DataGridViewRow row = this.bunifuCustomDataGrid1.Rows[rowindex];
-                string branch_id = row.Cells["branch_id"].Value.ToString();
-                lblId.Text = branch_id;
-                string s = "ss";
-             if (int.Parse(lblId.Text) > 0 && s =="ss")
-                { bfbDeleteBranches.Enabled = true;
-                    bfbEditBranches.Enabled = true;  }
-                string sql = @"select branch_name from branches where branch_id= '{0}'";
-                //استعمال  excuteSql
-                string branch_name = db.excuteSql(string.Format(sql, branch_id));
-
-                MessageBox.Show(branch_name);
-            }
-
-        }
-
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
@@ -142,13 +116,7 @@ namespace MyStore
 
             //تم حل مشكل داتابايز
 
-            String sql = @"INSERT INTO  Branches  (branch_name) VALUES (N'{0}')";
-
-
-            db.excuteSql(string.Format(sql, textBoxBranch.Text));
-
-            MessageBox.Show("تم الحفظ");
-            show();
+            
         }
 
         private void bunifuCustomDataGrid1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -177,11 +145,27 @@ namespace MyStore
         }
 
         //حدف  delete branches
-        private void bfbDeleteBranches_Click(object sender, EventArgs e)
+        
+
+
+
+        //edit تعديل الفروع
+      
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lblId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bfbDeleteBranches_Click_1(object sender, EventArgs e)
+        {
             string sql = "delete from Branches where branch_id = '{0}' ";
-           
+
             DialogResult dialogResult = MessageBox.Show("هل تريد حذف  الفرع  ", "حذف الفرع", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Yes)
             {
@@ -189,20 +173,15 @@ namespace MyStore
             }
             else if (dialogResult == DialogResult.No)
             {
-               
+
                 show();
             }
 
             show();
-
         }
 
-
-
-        //edit تعديل الفروع
-        private void bfbEditBranches_Click(object sender, EventArgs e)
+        private void bfbEditBranches_Click_1(object sender, EventArgs e)
         {
-
 
             string sql = "update Branches set branch_name = N'{0}' where branch_id='{1}'";
 
@@ -218,12 +197,41 @@ namespace MyStore
 
 
             show();
-
-
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnSaveBranchStore_Click_1(object sender, EventArgs e)
         {
+            String sql = @"INSERT INTO  Branches  (branch_name) VALUES (N'{0}')";
+
+
+            db.excuteSql(string.Format(sql, textBoxBranch.Text));
+
+            MessageBox.Show("تم الحفظ");
+            show();
+        }
+
+        private void bunifuCustomDataGrid1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+            bunifuCustomDataGrid1.ClearSelection();
+            //اختيار اسم الفرع من جدول الفروع واصافته في تكست بوكس
+            if (bunifuCustomDataGrid1.SelectedCells.Count > 0)
+            {
+                int rowindex = bunifuCustomDataGrid1.SelectedCells[0].RowIndex;
+                DataGridViewRow row = this.bunifuCustomDataGrid1.Rows[rowindex];
+                string branch_id = row.Cells["branch_id"].Value.ToString();
+                lblId.Text = branch_id;
+                string s = "ss";
+                if (int.Parse(lblId.Text) > 0 && s == "ss")
+                {
+                    bfbDeleteBranches.Enabled = true;
+                    bfbEditBranches.Enabled = true;
+                }
+                string sql = @"select branch_name from branches where branch_id= '{0}'";
+                //استعمال  excuteSql
+                string branch_name = db.excuteSql(string.Format(sql, branch_id));
+
+                MessageBox.Show(branch_name);
+            }
 
         }
     }

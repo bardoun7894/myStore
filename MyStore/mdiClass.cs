@@ -104,7 +104,7 @@ namespace MyStore
 
         private void اضافةموردجديدToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmUsers fs = new FrmUsers("2");
+            FrmUsers fs = new FrmUsers("3");
             fs.MdiParent = this;
             fs.Show();
         }
@@ -112,9 +112,7 @@ namespace MyStore
 
         private void ClientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmUsers fs = new FrmUsers("3");
-            fs.MdiParent = this;
-            fs.Show();
+           
         }
 
         private void الفروعToolStripMenuItem_Click(object sender, EventArgs e)
@@ -134,9 +132,7 @@ namespace MyStore
 
         private void موضفToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmUsersShow frm = new FrmUsersShow("2");
-            frm.MdiParent = this;
-            frm.Show();
+           
 
         }
 
@@ -146,6 +142,28 @@ namespace MyStore
             frm.MdiParent = this;
             frm.Show();
 
+        }
+
+        private void اضافةعميلToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsers fs = new FrmUsers("1");
+            fs.MdiParent = this;
+            fs.Show();
+        }
+
+        private void موظفجديدToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsers fs = new FrmUsers("2");
+            fs.MdiParent = this;
+            fs.Show();
+
+        }
+
+        private void فلترةالموظفينToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsersShow frm = new FrmUsersShow("2");
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }

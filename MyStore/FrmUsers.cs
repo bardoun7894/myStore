@@ -14,6 +14,10 @@ namespace MyStore
     {
         //اضافة المورد
         String user_kind_id = "";
+
+        // انشاء فرع واحد و مخزن واحد
+        String store_id = "1";
+        String branch_id = "1";
         DB db = new DB();
 
         public FrmUsers(string kind_user)
@@ -28,7 +32,8 @@ namespace MyStore
 
             Random rm = new Random();
             int x=rm.Next(10000,50000);
-
+            lblstore.Text = store_id;
+            lblbranch.Text = branch_id;
             textBoxcode.Text = x.ToString();
             if (user_kind_id == "1")
             {
@@ -62,13 +67,13 @@ namespace MyStore
            ,[user_adress]
            ,[user_phone]
            ,[user_date]
-           ,[user_kind_id],user_name,user_password)
-     VALUES (N'{0}',N'{1}',N'{2}',N'{3}',{4},N'{5}',N'{6}',N'{7}')
+           ,[user_kind_id],user_name,user_password,branch_id,store_id)
+     VALUES (N'{0}',N'{1}',N'{2}',N'{3}',{4},N'{5}',N'{6}',N'{7}',N'{8}',N'{9}')
  "; 
             string date = "CAST(CONVERT(varchar(50),getdate(),121) AS DATETIME)";
             db.excuteSql(string.Format(sql, 
                 textBoxcode.Text,textBoxName.Text,
-                textBoxAdresse.Text,textBoxPhone.Text,date,user_kind_id,textboxUser.Text,textBoxPass.Text));
+                textBoxAdresse.Text,textBoxPhone.Text,date,user_kind_id,textboxUser.Text,textBoxPass.Text, lblbranch.Text, lblstore.Text));
             MessageBox.Show("تمت الاضافة بنجاح");
 
 

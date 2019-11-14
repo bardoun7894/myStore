@@ -28,108 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBranchAdd));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblId = new System.Windows.Forms.Label();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.textBoxBranch = new System.Windows.Forms.TextBox();
             this.bfbEditBranches = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bfbDeleteBranches = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.textBoxBranch = new System.Windows.Forms.TextBox();
             this.btnSaveBranchStore = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.lblId);
-            this.groupBox1.Controls.Add(this.bfbEditBranches);
-            this.groupBox1.Controls.Add(this.bunifuCustomDataGrid1);
-            this.groupBox1.Controls.Add(this.bunifuCustomLabel1);
-            this.groupBox1.Controls.Add(this.bfbDeleteBranches);
-            this.groupBox1.Controls.Add(this.textBoxBranch);
-            this.groupBox1.Controls.Add(this.btnSaveBranchStore);
-            this.groupBox1.Font = new System.Drawing.Font("عصري عادي", 9F);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(192, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(558, 497);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "  ";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // bunifuCustomDataGrid1
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("عصري عادي", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(207)))));
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(15, 93);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(237)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(527, 313);
-            this.bunifuCustomDataGrid1.TabIndex = 8;
-            this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick_1);
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
             this.lblId.Enabled = false;
-            this.lblId.Location = new System.Drawing.Point(245, 17);
+            this.lblId.Location = new System.Drawing.Point(25, 29);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(35, 14);
-            this.lblId.TabIndex = 7;
+            this.lblId.Size = new System.Drawing.Size(35, 13);
+            this.lblId.TabIndex = 18;
             this.lblId.Text = "label2";
             this.lblId.Visible = false;
-            this.lblId.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(464, 50);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(78, 29);
-            this.bunifuCustomLabel1.TabIndex = 7;
-            this.bunifuCustomLabel1.Text = "اسم الفرع";
-            // 
-            // textBoxBranch
-            // 
-            this.textBoxBranch.BackColor = System.Drawing.Color.White;
-            this.textBoxBranch.Location = new System.Drawing.Point(15, 58);
-            this.textBoxBranch.Name = "textBoxBranch";
-            this.textBoxBranch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxBranch.Size = new System.Drawing.Size(418, 21);
-            this.textBoxBranch.TabIndex = 1;
-            this.textBoxBranch.TextChanged += new System.EventHandler(this.textBoxBranch_TextChanged);
+            this.lblId.Click += new System.EventHandler(this.lblId_Click);
             // 
             // bfbEditBranches
             // 
@@ -154,7 +78,7 @@
             this.bfbEditBranches.IconVisible = true;
             this.bfbEditBranches.IconZoom = 50D;
             this.bfbEditBranches.IsTab = false;
-            this.bfbEditBranches.Location = new System.Drawing.Point(228, 434);
+            this.bfbEditBranches.Location = new System.Drawing.Point(159, 55);
             this.bfbEditBranches.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bfbEditBranches.Name = "bfbEditBranches";
             this.bfbEditBranches.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
@@ -162,12 +86,73 @@
             this.bfbEditBranches.OnHoverTextColor = System.Drawing.Color.White;
             this.bfbEditBranches.selected = false;
             this.bfbEditBranches.Size = new System.Drawing.Size(135, 43);
-            this.bfbEditBranches.TabIndex = 15;
+            this.bfbEditBranches.TabIndex = 22;
             this.bfbEditBranches.Text = "     تعديل";
             this.bfbEditBranches.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bfbEditBranches.Textcolor = System.Drawing.Color.White;
             this.bfbEditBranches.TextFont = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bfbEditBranches.Click += new System.EventHandler(this.bfbEditBranches_Click);
+            this.bfbEditBranches.Click += new System.EventHandler(this.bfbEditBranches_Click_1);
+            // 
+            // bunifuCustomDataGrid1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MO_Nawel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("عصري عادي", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuCustomDataGrid1.ColumnHeadersHeight = 40;
+            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("MO_Nawel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuCustomDataGrid1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuCustomDataGrid1.DoubleBuffered = true;
+            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
+            this.bunifuCustomDataGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(3, 164);
+            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
+            this.bunifuCustomDataGrid1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(237)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(946, 354);
+            this.bunifuCustomDataGrid1.TabIndex = 20;
+            this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick_2);
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(871, 57);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(78, 29);
+            this.bunifuCustomLabel1.TabIndex = 19;
+            this.bunifuCustomLabel1.Text = "اسم الفرع";
             // 
             // bfbDeleteBranches
             // 
@@ -192,7 +177,7 @@
             this.bfbDeleteBranches.IconVisible = true;
             this.bfbDeleteBranches.IconZoom = 60D;
             this.bfbDeleteBranches.IsTab = false;
-            this.bfbDeleteBranches.Location = new System.Drawing.Point(42, 434);
+            this.bfbDeleteBranches.Location = new System.Drawing.Point(14, 55);
             this.bfbDeleteBranches.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bfbDeleteBranches.Name = "bfbDeleteBranches";
             this.bfbDeleteBranches.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
@@ -200,12 +185,21 @@
             this.bfbDeleteBranches.OnHoverTextColor = System.Drawing.Color.White;
             this.bfbDeleteBranches.selected = false;
             this.bfbDeleteBranches.Size = new System.Drawing.Size(135, 43);
-            this.bfbDeleteBranches.TabIndex = 14;
+            this.bfbDeleteBranches.TabIndex = 21;
             this.bfbDeleteBranches.Text = "    حذف  ";
             this.bfbDeleteBranches.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bfbDeleteBranches.Textcolor = System.Drawing.Color.White;
             this.bfbDeleteBranches.TextFont = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bfbDeleteBranches.Click += new System.EventHandler(this.bfbDeleteBranches_Click);
+            this.bfbDeleteBranches.Click += new System.EventHandler(this.bfbDeleteBranches_Click_1);
+            // 
+            // textBoxBranch
+            // 
+            this.textBoxBranch.BackColor = System.Drawing.Color.White;
+            this.textBoxBranch.Location = new System.Drawing.Point(447, 64);
+            this.textBoxBranch.Name = "textBoxBranch";
+            this.textBoxBranch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxBranch.Size = new System.Drawing.Size(418, 20);
+            this.textBoxBranch.TabIndex = 16;
             // 
             // btnSaveBranchStore
             // 
@@ -230,7 +224,7 @@
             this.btnSaveBranchStore.IconVisible = true;
             this.btnSaveBranchStore.IconZoom = 90D;
             this.btnSaveBranchStore.IsTab = false;
-            this.btnSaveBranchStore.Location = new System.Drawing.Point(407, 434);
+            this.btnSaveBranchStore.Location = new System.Drawing.Point(304, 55);
             this.btnSaveBranchStore.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSaveBranchStore.Name = "btnSaveBranchStore";
             this.btnSaveBranchStore.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
@@ -238,41 +232,44 @@
             this.btnSaveBranchStore.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSaveBranchStore.selected = false;
             this.btnSaveBranchStore.Size = new System.Drawing.Size(135, 43);
-            this.btnSaveBranchStore.TabIndex = 6;
+            this.btnSaveBranchStore.TabIndex = 17;
             this.btnSaveBranchStore.Text = "إضافة";
             this.btnSaveBranchStore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSaveBranchStore.Textcolor = System.Drawing.Color.White;
             this.btnSaveBranchStore.TextFont = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnSaveBranchStore.Click += new System.EventHandler(this.btnSaveBranchStore_Click);
+            this.btnSaveBranchStore.Click += new System.EventHandler(this.btnSaveBranchStore_Click_1);
             // 
             // frmBranchAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
-            this.ClientSize = new System.Drawing.Size(941, 521);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(950, 521);
+            this.Controls.Add(this.lblId);
+            this.Controls.Add(this.bfbEditBranches);
+            this.Controls.Add(this.bunifuCustomDataGrid1);
+            this.Controls.Add(this.bunifuCustomLabel1);
+            this.Controls.Add(this.bfbDeleteBranches);
+            this.Controls.Add(this.textBoxBranch);
+            this.Controls.Add(this.btnSaveBranchStore);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmBranchAdd";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmBranchAdd";
             this.Load += new System.EventHandler(this.frmBranchAdd_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBoxBranch;
         private System.Windows.Forms.Label lblId;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSaveBranchStore;
+        private Bunifu.Framework.UI.BunifuFlatButton bfbEditBranches;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuFlatButton bfbDeleteBranches;
-        private Bunifu.Framework.UI.BunifuFlatButton bfbEditBranches;
+        private System.Windows.Forms.TextBox textBoxBranch;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSaveBranchStore;
     }
 }
