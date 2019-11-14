@@ -46,8 +46,9 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.lblKind = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.textBoxDate = new System.Windows.Forms.TextBox();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.groupLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -208,7 +209,7 @@
             this.btnSave.IconVisible = true;
             this.btnSave.IconZoom = 90D;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(22, 324);
+            this.btnSave.Location = new System.Drawing.Point(410, 468);
             this.btnSave.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
@@ -222,6 +223,7 @@
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Textcolor = System.Drawing.Color.White;
             this.btnSave.TextFont = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // textBoxName
             // 
@@ -237,7 +239,7 @@
             this.lblKind.AutoSize = true;
             this.lblKind.Font = new System.Drawing.Font("MO_Nawel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblKind.ForeColor = System.Drawing.Color.White;
-            this.lblKind.Location = new System.Drawing.Point(378, -10);
+            this.lblKind.Location = new System.Drawing.Point(355, -7);
             this.lblKind.Name = "lblKind";
             this.lblKind.Size = new System.Drawing.Size(55, 32);
             this.lblKind.TabIndex = 34;
@@ -245,8 +247,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.bunifuFlatButton1);
             this.groupBox1.Controls.Add(this.bunifuCustomLabel7);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxDate);
             this.groupBox1.Controls.Add(this.groupLogin);
             this.groupBox1.Controls.Add(this.bunifuCustomLabel5);
             this.groupBox1.Controls.Add(this.textBoxcode);
@@ -262,20 +265,11 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(26, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(738, 448);
+            this.groupBox1.Size = new System.Drawing.Size(738, 518);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "تعديل";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(243, 267);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(216, 30);
-            this.textBox1.TabIndex = 36;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // bunifuCustomLabel7
             // 
@@ -288,16 +282,67 @@
             this.bunifuCustomLabel7.TabIndex = 37;
             this.bunifuCustomLabel7.Text = "تاريخ التسجيل";
             // 
+            // textBoxDate
+            // 
+            this.textBoxDate.BackColor = System.Drawing.Color.White;
+            this.textBoxDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxDate.Location = new System.Drawing.Point(243, 267);
+            this.textBoxDate.Name = "textBoxDate";
+            this.textBoxDate.ReadOnly = true;
+            this.textBoxDate.Size = new System.Drawing.Size(216, 30);
+            this.textBoxDate.TabIndex = 36;
+            this.textBoxDate.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bunifuFlatButton1.ButtonText = "        حذف  ";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Font = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 50D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(216, 468);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(135, 43);
+            this.bunifuFlatButton1.TabIndex = 38;
+            this.bunifuFlatButton1.Text = "        حذف  ";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            // 
             // FrmEditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
-            this.ClientSize = new System.Drawing.Size(773, 476);
+            this.ClientSize = new System.Drawing.Size(773, 561);
             this.Controls.Add(this.lblKind);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmEditUser";
             this.Text = "FrmEditUser";
+            this.Load += new System.EventHandler(this.FrmEditUser_Load);
             this.groupLogin.ResumeLayout(false);
             this.groupLogin.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -327,6 +372,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel lblKind;
         private System.Windows.Forms.GroupBox groupBox1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxDate;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }

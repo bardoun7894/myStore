@@ -67,12 +67,13 @@
             this.groupBox1.Controls.Add(this.textBoxName);
             this.groupBox1.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(94, 32);
+            this.groupBox1.Location = new System.Drawing.Point(88, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(728, 438);
+            this.groupBox1.Size = new System.Drawing.Size(728, 471);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اضافة جديدة";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupLogin
             // 
@@ -231,7 +232,7 @@
             this.btnSave.IconVisible = true;
             this.btnSave.IconZoom = 90D;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(22, 324);
+            this.btnSave.Location = new System.Drawing.Point(322, 421);
             this.btnSave.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
@@ -261,7 +262,7 @@
             this.lblKind.AutoSize = true;
             this.lblKind.Font = new System.Drawing.Font("MO_Nawel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblKind.ForeColor = System.Drawing.Color.White;
-            this.lblKind.Location = new System.Drawing.Point(424, 0);
+            this.lblKind.Location = new System.Drawing.Point(858, 9);
             this.lblKind.Name = "lblKind";
             this.lblKind.Size = new System.Drawing.Size(55, 32);
             this.lblKind.TabIndex = 32;
@@ -270,7 +271,7 @@
             // lblstore
             // 
             this.lblstore.AutoSize = true;
-            this.lblstore.Location = new System.Drawing.Point(23, 32);
+            this.lblstore.Location = new System.Drawing.Point(12, 47);
             this.lblstore.Name = "lblstore";
             this.lblstore.Size = new System.Drawing.Size(35, 13);
             this.lblstore.TabIndex = 33;

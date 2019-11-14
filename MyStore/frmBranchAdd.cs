@@ -167,15 +167,7 @@ namespace MyStore
             string sql = "delete from Branches where branch_id = '{0}' ";
 
             DialogResult dialogResult = MessageBox.Show("هل تريد حذف  الفرع  ", "حذف الفرع", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (dialogResult == DialogResult.Yes)
-            {
-                db.excuteSql(string.Format(sql, lblId.Text));
-            }
-            else if (dialogResult == DialogResult.No)
-            {
-
-                show();
-            }
+           
 
             show();
         }

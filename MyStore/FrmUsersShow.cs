@@ -29,6 +29,7 @@ namespace MyStore
             {
                 lbluser.Text = "العملاء";
 
+
             }
             if (kind_user_id == "2")
             {
@@ -62,6 +63,9 @@ namespace MyStore
 
         private void bfbEditBranches_Click(object sender, EventArgs e)
         {
+            FrmEditUser fm = new FrmEditUser(lblid.Text,kind_user_id);
+            fm.MdiParent = frmMain.ActiveForm;
+            fm.Show();
 
 
         }
@@ -89,25 +93,27 @@ namespace MyStore
         private void btnSearch_Click(object sender, EventArgs e)
         {
 
-            string sql = @"SELECT        dbo.Users.user_code AS UserCode,
-dbo.Users.user_fullname AS Name,
-dbo.Users.user_adress,
-dbo.Users.user_phone,
-dbo.Users.user_date,
-dbo.Users.user_name, 
-dbo.Users.user_password,
-dbo.Users.user_id
-FROM            dbo.Users INNER JOIN
-                         dbo.Branches ON dbo.Users.branch_id = dbo.Branches.branch_id LEFT OUTER JOIN
-                         dbo.Users_kind ON dbo.Users.user_kind_id = dbo.Users_kind.user_kind_id where 1=1";
+            string sql = @"SELECT        
+                  dbo.Users.user_code AS UserCode,
+                  dbo.Users.user_fullname AS Name,
+                  dbo.Users.user_adress,
+                  dbo.Users.user_phone,
+                  dbo.Users.user_date,
+                  dbo.Users.user_name, 
+                  dbo.Users.user_password,
+                  dbo.Users.user_id
+                 FROM   
+                  dbo.Users INNER JOIN
+                  dbo.Branches ON dbo.Users.branch_id = dbo.Branches.branch_id LEFT OUTER JOIN
+                  dbo.Users_kind ON dbo.Users.user_kind_id = dbo.Users_kind.user_kind_id where 1=1";
             string condition = "";
             if (textBoxcode.Text != "")
             {
                 condition += " and Users.user_code = '" + textBoxcode.Text + " '";
             }
             if (textBoxName.Text != "")
-            {
-                condition += " and Users.user_fullname = '" + textBoxName.Text + " '";
+            { 
+                condition += " and Users.user_fullname = N'" + textBoxName.Text + " '";
             }
             if (textBoxPhone.Text != "")
             {

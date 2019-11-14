@@ -47,13 +47,13 @@ namespace MyStore
                 lblKind.Text = "الموظفين";
                 textboxUser.Text = "";
                 textBoxPass.Text = "";
-                groupLogin.Visible = false;
+                groupLogin.Visible = true;
 
             }
             if (user_kind_id == "3")
             {
                 lblKind.Text = "الموردين";
-                groupLogin.Visible = true;
+                groupLogin.Visible = false;
             }
             this.Text = lblKind.Text;
 
@@ -82,6 +82,16 @@ namespace MyStore
         private void bunifuCustomLabel5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
