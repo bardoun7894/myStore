@@ -36,11 +36,11 @@
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.lblId1 = new System.Windows.Forms.Label();
             this.comboBranch = new System.Windows.Forms.ComboBox();
-            this.bfbDeleteS = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSaveBranchStore = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtStore = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bfbDeleteS = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnSaveBranchStore = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bfbEditStore = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
@@ -79,7 +79,7 @@
             this.bunifuCustomDataGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.DodgerBlue;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(3, 103);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(-11, 100);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -111,6 +111,37 @@
             this.comboBranch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboBranch.Size = new System.Drawing.Size(326, 23);
             this.comboBranch.TabIndex = 18;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(672, 68);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(58, 29);
+            this.bunifuCustomLabel2.TabIndex = 17;
+            this.bunifuCustomLabel2.Text = "المخزن";
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(652, 22);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(78, 29);
+            this.bunifuCustomLabel1.TabIndex = 16;
+            this.bunifuCustomLabel1.Text = "اسم الفرع";
+            // 
+            // txtStore
+            // 
+            this.txtStore.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtStore.Location = new System.Drawing.Point(310, 75);
+            this.txtStore.Name = "txtStore";
+            this.txtStore.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtStore.Size = new System.Drawing.Size(326, 22);
+            this.txtStore.TabIndex = 15;
             // 
             // bfbDeleteS
             // 
@@ -187,37 +218,6 @@
             this.btnSaveBranchStore.Textcolor = System.Drawing.Color.White;
             this.btnSaveBranchStore.TextFont = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnSaveBranchStore.Click += new System.EventHandler(this.btnSaveBranchStore_Click_1);
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(672, 68);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(58, 29);
-            this.bunifuCustomLabel2.TabIndex = 17;
-            this.bunifuCustomLabel2.Text = "المخزن";
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(652, 22);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(78, 29);
-            this.bunifuCustomLabel1.TabIndex = 16;
-            this.bunifuCustomLabel1.Text = "اسم الفرع";
-            // 
-            // txtStore
-            // 
-            this.txtStore.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtStore.Location = new System.Drawing.Point(310, 75);
-            this.txtStore.Name = "txtStore";
-            this.txtStore.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtStore.Size = new System.Drawing.Size(326, 22);
-            this.txtStore.TabIndex = 15;
             // 
             // bfbEditStore
             // 

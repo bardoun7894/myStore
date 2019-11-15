@@ -165,11 +165,16 @@ namespace MyStore
         private void bfbDeleteBranches_Click_1(object sender, EventArgs e)
         {
             string sql = "delete from Branches where branch_id = '{0}' ";
-
-            DialogResult dialogResult = MessageBox.Show("هل تريد حذف  الفرع  ", "حذف الفرع", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-           
-
-            show();
+            DialogResult dialogResult = MessageBox.Show("هل تريد حذف المخزن", "حذف المخزن", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Yes)
+            {
+                db.excuteSql(string.Format(sql,lblId.Text));
+                
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                this.Hide();
+            }
         }
 
         private void bfbEditBranches_Click_1(object sender, EventArgs e)

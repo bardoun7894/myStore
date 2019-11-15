@@ -54,7 +54,7 @@ FROM   dbo.Branches INNER JOIN  dbo.Branches_store ON dbo.Branches.branch_id = d
 
         private void btnSaveBranchStore_Click_1(object sender, EventArgs e)
         {
-            //اضافة الفروع  للمخن عبر combobox
+            //اضافة الفروع  للمخن عبر combobox 
 
             String sql = @"INSERT INTO [dbo].[Branches_store]   ([store_name] ,[branch_id] ) VALUES (N'{0}',N'{1}')";
             db.excuteSql(string.Format(sql, txtStore.Text, comboBranch.SelectedValue));

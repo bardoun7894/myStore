@@ -77,6 +77,12 @@
     <Compile Include="dddForm1.Designer.cs">
       <DependentUpon>dddForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditCatagories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCatagories.Designer.cs">
+      <DependentUpon>EditCatagories.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1Grid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     </Compile>
     <Compile Include="frmBranches_store.Designer.cs">
       <DependentUpon>frmBranches_store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatagory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatagory.Designer.cs">
+      <DependentUpon>frmCatagory.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEditUser.cs">
       <SubType>Form</SubType>
@@ -160,6 +172,9 @@
     <EmbeddedResource Include="dddForm1.resx">
       <DependentUpon>dddForm1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditCatagories.resx">
+      <DependentUpon>EditCatagories.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1Grid.resx">
       <DependentUpon>Form1Grid.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBranches_store.resx">
       <DependentUpon>frmBranches_store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatagory.resx">
+      <DependentUpon>frmCatagory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditUser.resx">
       <DependentUpon>FrmEditUser.cs</DependentUpon>

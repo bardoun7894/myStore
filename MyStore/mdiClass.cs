@@ -165,5 +165,9 @@ namespace MyStore
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void jjjToolStripMenuItem_Click(object sender, EventArgs e)
+        { 
+        }
     }
 }

@@ -113,7 +113,6 @@ namespace MyStore
                 this.Show();
             }
 
-
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
@@ -134,7 +133,7 @@ namespace MyStore
                 textBoxPhone.Text = "";
                 textboxUser.Text = "";
                 textBoxPass.Text = "";
-
+                this.Hide();
 
             }
             else if (dialogResult == DialogResult.No)
