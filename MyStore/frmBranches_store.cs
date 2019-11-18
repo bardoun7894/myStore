@@ -135,5 +135,10 @@ FROM   dbo.Branches INNER JOIN  dbo.Branches_store ON dbo.Branches.branch_id = d
             }
             showData();
         }
+
+        private void comboBranch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

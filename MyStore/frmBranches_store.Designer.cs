@@ -111,6 +111,7 @@
             this.comboBranch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboBranch.Size = new System.Drawing.Size(326, 23);
             this.comboBranch.TabIndex = 18;
+            this.comboBranch.SelectedIndexChanged += new System.EventHandler(this.comboBranch_SelectedIndexChanged);
             // 
             // bunifuCustomLabel2
             // 

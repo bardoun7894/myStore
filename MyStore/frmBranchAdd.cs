@@ -151,11 +151,7 @@ namespace MyStore
 
         //edit تعديل الفروع
       
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+ 
 
         private void lblId_Click(object sender, EventArgs e)
         {

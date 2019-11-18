@@ -1,6 +1,6 @@
 ﻿namespace MyStore
 {
-    partial class FrmUsersShow
+    partial class ProductShow
     {
         /// <summary>
         /// Required designer variable.
@@ -32,124 +32,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsersShow));
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductShow));
+            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.lblid = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.textBoxcode = new System.Windows.Forms.TextBox();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.textBoxName = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lbluser = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblid = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bfbEditUser = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSearch = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(346, 17);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(78, 29);
-            this.bunifuCustomLabel1.TabIndex = 7;
-            this.bunifuCustomLabel1.Text = "اسم الفرع";
-            // 
-            // bunifuCustomLabel5
-            // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(799, 17);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(118, 29);
-            this.bunifuCustomLabel5.TabIndex = 40;
-            this.bunifuCustomLabel5.Text = "الكود التعريفي";
-            // 
-            // textBoxcode
-            // 
-            this.textBoxcode.BackColor = System.Drawing.Color.White;
-            this.textBoxcode.Location = new System.Drawing.Point(547, 24);
-            this.textBoxcode.Name = "textBoxcode";
-            this.textBoxcode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxcode.Size = new System.Drawing.Size(216, 20);
-            this.textBoxcode.TabIndex = 39;
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(849, 96);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(54, 29);
-            this.bunifuCustomLabel2.TabIndex = 38;
-            this.bunifuCustomLabel2.Text = "الهاتف";
-            // 
-            // textBoxPhone
-            // 
-            this.textBoxPhone.BackColor = System.Drawing.Color.White;
-            this.textBoxPhone.Location = new System.Drawing.Point(547, 105);
-            this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxPhone.Size = new System.Drawing.Size(216, 20);
-            this.textBoxPhone.TabIndex = 37;
-            // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(867, 58);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(36, 29);
-            this.bunifuCustomLabel3.TabIndex = 36;
-            this.bunifuCustomLabel3.Text = "اسم";
-            // 
-            // textBoxName
-            // 
-            this.textBoxName.BackColor = System.Drawing.Color.White;
-            this.textBoxName.Location = new System.Drawing.Point(547, 65);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxName.Size = new System.Drawing.Size(216, 20);
-            this.textBoxName.TabIndex = 35;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(32, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(283, 21);
-            this.comboBox1.TabIndex = 41;
-            // 
-            // lbluser
-            // 
-            this.lbluser.AutoSize = true;
-            this.lbluser.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbluser.ForeColor = System.Drawing.Color.White;
-            this.lbluser.Location = new System.Drawing.Point(799, 58);
-            this.lbluser.Name = "lbluser";
-            this.lbluser.Size = new System.Drawing.Size(71, 29);
-            this.lbluser.TabIndex = 43;
-            this.lbluser.Text = "البردوني";
-            this.lbluser.Click += new System.EventHandler(this.lbluser_Click);
-            // 
-            // lblid
-            // 
-            this.lblid.AutoSize = true;
-            this.lblid.Font = new System.Drawing.Font("MO_Nawel", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblid.ForeColor = System.Drawing.Color.White;
-            this.lblid.Location = new System.Drawing.Point(458, 24);
-            this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(51, 17);
-            this.lblid.TabIndex = 45;
-            this.lblid.Text = "اسم الفرع";
             // 
             // bunifuCustomDataGrid1
             // 
@@ -188,7 +83,7 @@
             this.bunifuCustomDataGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.DodgerBlue;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(12, 137);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(12, 158);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -198,9 +93,67 @@
             this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.bunifuCustomDataGrid1.RowTemplate.Height = 26;
             this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(946, 372);
-            this.bunifuCustomDataGrid1.TabIndex = 46;
-            this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick_1);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(948, 377);
+            this.bunifuCustomDataGrid1.TabIndex = 59;
+            // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Font = new System.Drawing.Font("MO_Nawel", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblid.ForeColor = System.Drawing.Color.White;
+            this.lblid.Location = new System.Drawing.Point(489, 35);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(51, 17);
+            this.lblid.TabIndex = 58;
+            this.lblid.Text = "اسم الفرع";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(32, 36);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(283, 21);
+            this.comboBox1.TabIndex = 54;
+            // 
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(887, 28);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(53, 29);
+            this.bunifuCustomLabel5.TabIndex = 53;
+            this.bunifuCustomLabel5.Text = "الكود";
+            // 
+            // textBoxcode
+            // 
+            this.textBoxcode.BackColor = System.Drawing.Color.White;
+            this.textBoxcode.Location = new System.Drawing.Point(635, 35);
+            this.textBoxcode.Name = "textBoxcode";
+            this.textBoxcode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxcode.Size = new System.Drawing.Size(216, 20);
+            this.textBoxcode.TabIndex = 52;
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(904, 69);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(36, 29);
+            this.bunifuCustomLabel3.TabIndex = 49;
+            this.bunifuCustomLabel3.Text = "اسم";
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.BackColor = System.Drawing.Color.White;
+            this.textBoxName.Location = new System.Drawing.Point(635, 76);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxName.Size = new System.Drawing.Size(216, 20);
+            this.textBoxName.TabIndex = 48;
             // 
             // bfbEditUser
             // 
@@ -225,21 +178,20 @@
             this.bfbEditUser.IconVisible = true;
             this.bfbEditUser.IconZoom = 50D;
             this.bfbEditUser.IsTab = false;
-            this.bfbEditUser.Location = new System.Drawing.Point(351, 67);
+            this.bfbEditUser.Location = new System.Drawing.Point(50, 93);
             this.bfbEditUser.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bfbEditUser.Name = "bfbEditUser";
             this.bfbEditUser.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
             this.bfbEditUser.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bfbEditUser.OnHoverTextColor = System.Drawing.Color.White;
             this.bfbEditUser.selected = false;
-            this.bfbEditUser.Size = new System.Drawing.Size(135, 43);
-            this.bfbEditUser.TabIndex = 44;
+            this.bfbEditUser.Size = new System.Drawing.Size(219, 43);
+            this.bfbEditUser.TabIndex = 57;
             this.bfbEditUser.Text = "     تعديل";
             this.bfbEditUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bfbEditUser.Textcolor = System.Drawing.Color.White;
             this.bfbEditUser.TextFont = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.bfbEditUser.Visible = false;
-            this.bfbEditUser.Click += new System.EventHandler(this.bfbEditBranches_Click);
             // 
             // btnSearch
             // 
@@ -264,7 +216,7 @@
             this.btnSearch.IconVisible = true;
             this.btnSearch.IconZoom = 60D;
             this.btnSearch.IsTab = false;
-            this.btnSearch.Location = new System.Drawing.Point(60, 67);
+            this.btnSearch.Location = new System.Drawing.Point(328, 93);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
@@ -273,38 +225,41 @@
             this.btnSearch.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnSearch.selected = false;
             this.btnSearch.Size = new System.Drawing.Size(231, 43);
-            this.btnSearch.TabIndex = 42;
+            this.btnSearch.TabIndex = 55;
             this.btnSearch.Text = "         بحث          ";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.Textcolor = System.Drawing.Color.White;
             this.btnSearch.TextFont = new System.Drawing.Font("هشام قرطبة", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // FrmUsersShow
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("MO_Nawel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(346, 26);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(73, 29);
+            this.bunifuCustomLabel1.TabIndex = 47;
+            this.bunifuCustomLabel1.Text = "اسم الفئة";
+            // 
+            // ProductShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
-            this.ClientSize = new System.Drawing.Size(970, 521);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.lblid);
             this.Controls.Add(this.bfbEditUser);
-            this.Controls.Add(this.lbluser);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.textBoxcode);
-            this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmUsersShow";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FrmUsersShow_Load);
+            this.Name = "ProductShow";
+            this.Text = "ProductShow";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -312,18 +267,16 @@
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+
+        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblid;
+        private Bunifu.Framework.UI.BunifuFlatButton bfbEditUser;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSearch;
+        private System.Windows.Forms.ComboBox comboBox1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private System.Windows.Forms.TextBox textBoxcode;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private System.Windows.Forms.TextBox textBoxPhone;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private System.Windows.Forms.TextBox textBoxName;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSearch;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbluser;
-        private Bunifu.Framework.UI.BunifuFlatButton bfbEditUser;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblid;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
     }
 }

@@ -11,13 +11,13 @@ using System.Data;
     class DB
     {
      
-    string con = ConfigurationManager.ConnectionStrings["mycon"].ConnectionString.ToString();
+  //  string con = ConfigurationManager.ConnectionStrings["mycon"].ConnectionString.ToString();
     SqlConnection cn;
     SqlCommand cmd =new SqlCommand();
     DataTable dt;
     SqlDataAdapter ad = new SqlDataAdapter();
     public SqlConnection sqlFire()
-    {    cn = new SqlConnection(con);
+    {//   cn = new SqlConnection(con);
         return cn;
     }
 
@@ -40,15 +40,16 @@ using System.Data;
             if (val == null)  {  return ""; }
             return val.ToString();
 
-        } catch
+        } catch(Exception e)
         {
-            return null;
+            return e.StackTrace;
         }    finally
         {
             if (cn.State == ConnectionState.Open)
             {
                 cn.Close();
             }
+                
             cmd.Dispose();
         }
     }
@@ -80,5 +81,8 @@ using System.Data;
 
     }
 
-
+    internal void excuteSql()
+    {
+        throw new NotImplementedException();
     }
+}

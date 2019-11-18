@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace MyStore
 {
     public partial class OriginPage : Form
     {
+       
         public OriginPage()
         {
             InitializeComponent();
+          
+           
+
         }
 
         private void bunifuCustomLabel1_Click(object sender, EventArgs e)
@@ -30,75 +34,43 @@ namespace MyStore
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-
+             
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            frmBranchAdd f = new frmBranchAdd();
-            
-            f.TopLevel = false;
-
-            f.Dock = DockStyle.Fill;
-            panel3.Controls.Clear();
-            panel3.Controls.Add(f);
-
-            f.BringToFront();
-            f.Show();
+          
 
         }
  
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
-        {
-            frmBranches_store f = new frmBranches_store();
-            f.TopLevel = false;
-
-            panel3.Controls.Clear();
-
-            f.Dock = DockStyle.Fill;
-            panel3.Controls.Add(f);
-            f.BringToFront();
-            f.Show();
-
+        { 
         }
 
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
-            Form1Grid f = new Form1Grid();
-            f.TopLevel = false;
-            panel3.Controls.Clear();
-            panel3.Controls.Add(f);
-            f.BringToFront();
-            f.Show();
+            
         }
 
-        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        private void btnBrandList_Click(object sender, EventArgs e)
         {
-            FrmSettings f = new FrmSettings();
-           
+            frmBrandList f = new frmBrandList();
+
             f.TopLevel = false;
-            
+
+            f.Dock = DockStyle.Fill;
+
             panel3.Controls.Clear();
             panel3.Controls.Add(f);
+
             f.BringToFront();
             f.Show();
-
         }
 
         private void settingsBtn_Click(object sender, EventArgs e)
         {
-            FrmUsersShow f = new FrmUsersShow("3");
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            // حليت مشكل ظهور اطار السابق تحت هذا لاطار ب الكود الي تحت
-
-            panel3.Controls.Clear();
-            panel3.Controls.Add(f);
-            f.MaximizeBox = true;
-            f.BringToFront();
-            f.Show();
-
+             
         }
 
         private void btnXcerrar(object sender, EventArgs e)
@@ -127,20 +99,25 @@ namespace MyStore
 
         private void catagoryBtn_Click(object sender, EventArgs e)
         {
-            frmCatagory f = new frmCatagory();
+            frmCategoryList f = new frmCategoryList();
+
             f.TopLevel = false;
+
             f.Dock = DockStyle.Fill;
-            // حليت مشكل ظهور اطار السابق تحت هذا لاطار ب الكود الي تحت
 
             panel3.Controls.Clear();
             panel3.Controls.Add(f);
-            f.MaximizeBox = true;
+
             f.BringToFront();
             f.Show();
-
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

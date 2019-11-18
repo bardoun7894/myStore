@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB.cs" />
+    <Compile Include="DBConnection.cs" />
     <Compile Include="dddForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +102,35 @@
     <Compile Include="frmBranches_store.Designer.cs">
       <DependentUpon>frmBranches_store.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCatagory.cs">
+    <Compile Include="frmBrand.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCatagory.Designer.cs">
-      <DependentUpon>frmCatagory.cs</DependentUpon>
+    <Compile Include="frmBrand.Designer.cs">
+      <DependentUpon>frmBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrandList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrandList.Designer.cs">
+      <DependentUpon>frmBrandList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatagory2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatagory2.Designer.cs">
+      <DependentUpon>frmCatagory2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryList.Designer.cs">
+      <DependentUpon>frmCategoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEditUser.cs">
       <SubType>Form</SubType>
@@ -155,6 +180,18 @@
     <Compile Include="OriginPage.Designer.cs">
       <DependentUpon>OriginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductShow.Designer.cs">
+      <DependentUpon>ProductShow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FrmOrders_kind.cs">
@@ -184,8 +221,20 @@
     <EmbeddedResource Include="frmBranches_store.resx">
       <DependentUpon>frmBranches_store.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCatagory.resx">
-      <DependentUpon>frmCatagory.cs</DependentUpon>
+    <EmbeddedResource Include="frmBrand.resx">
+      <DependentUpon>frmBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrandList.resx">
+      <DependentUpon>frmBrandList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatagory2.resx">
+      <DependentUpon>frmCatagory2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoryList.resx">
+      <DependentUpon>frmCategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditUser.resx">
       <DependentUpon>FrmEditUser.cs</DependentUpon>
@@ -210,6 +259,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OriginPage.resx">
       <DependentUpon>OriginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductShow.resx">
+      <DependentUpon>ProductShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

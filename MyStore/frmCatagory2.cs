@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace MyStore
 {
-    public partial class frmCatagory : Form
+    public partial class frmCatagory2 : Form
     {
         DB db = new DB();
-        public frmCatagory()
+        public frmCatagory2()
         {
             InitializeComponent();
         }
