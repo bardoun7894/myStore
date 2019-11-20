@@ -15,43 +15,10 @@ namespace MyStore
        
         public OriginPage()
         {
-            InitializeComponent();
-          
-           
-
+            InitializeComponent(); 
         }
-
-        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        private void bunifuFlatButton4_Click(object sender, EventArgs e)
-        {
-             
-        }
-
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-          
-
-        }
- 
-
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
-        { 
-        }
-
-        private void bunifuFlatButton7_Click(object sender, EventArgs e)
-        {
-            
-        }
+  
+  
 
         private void btnBrandList_Click(object sender, EventArgs e)
         {
@@ -111,15 +78,30 @@ namespace MyStore
             f.BringToFront();
             f.Show();
         }
+ 
+ 
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
+            frmProductList f = new frmProductList();
 
+            f.TopLevel = false;
+
+            f.Dock = DockStyle.Fill;
+
+            panel3.Controls.Clear();
+            panel3.Controls.Add(f);
+
+            f.BringToFront();
+            f.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+        private void StockBTN_Click(object sender, EventArgs e)
 
+        {  
+            frmStockIn f = new frmStockIn();
+            f.loadProducts();
+            f.ShowDialog();
         }
     }
 }

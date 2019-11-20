@@ -16,7 +16,7 @@ namespace MyStore
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
-        SqlDataReader dr;
+        
         DBConnection dbCon = new DBConnection();
         frmCategoryList frmList;
         public frmCategory(frmCategoryList flist)

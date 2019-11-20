@@ -32,7 +32,7 @@ namespace MyStore
             try
             {
                 cn.Open();
-                cm = new SqlCommand("Select * from tblCategory order by cate_name ", cn);
+                cm = new SqlCommand("Select * from tblCategory order by category ", cn);
                 //  dr = cm.ExecuteReader();
                 using (dr = cm.ExecuteReader())
 
@@ -40,7 +40,7 @@ namespace MyStore
                     while (dr.Read())
                     {
                         i += 1;
-                        dataGridView2.Rows.Add(i, dr["cate_id"].ToString(), dr["cate_name"].ToString());
+                        dataGridView2.Rows.Add(i, dr["id"].ToString(), dr["category"].ToString());
                     }
                 }
                 cm.ExecuteNonQuery();
@@ -75,7 +75,7 @@ namespace MyStore
                     frm.btnSave.Enabled = false;
                     frm.labelId.Text = dataGridView2[1, e.RowIndex].Value.ToString();
                     cn.Open();
-                    cm = new SqlCommand("delete from tblCategory where cate_id like  '" + dataGridView2[1, e.RowIndex].Value.ToString() + "'", cn);
+                    cm = new SqlCommand("delete from tblCategory where  id like  '" + dataGridView2[1, e.RowIndex].Value.ToString() + "'", cn);
                     cm.ExecuteNonQuery();
                     cn.Close();
                     MessageBox.Show("Records has succesfully Deleted .", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -101,6 +101,7 @@ namespace MyStore
             frmCategory frm = new frmCategory(this);
             frm.btnSave.Enabled = true;
             frm.btnUpdate.Enabled = false;
+      
             frm.ShowDialog();
         }
     }

@@ -32,7 +32,7 @@ namespace MyStore
             dataGridView1.Rows.Clear();
             try
             {   cn.Open(); 
-                cm = new SqlCommand("Select * from tblBrand order by brand_name ", cn);
+                cm = new SqlCommand("Select * from tblBrand order by brand ", cn);
                 //  dr = cm.ExecuteReader();
                 using (dr = cm.ExecuteReader())
 
@@ -40,7 +40,7 @@ namespace MyStore
                     while (dr.Read())
                     {
                         i += 1;
-                        dataGridView1.Rows.Add(i, dr["brand_id"].ToString(), dr["brand_name"].ToString());
+                        dataGridView1.Rows.Add(i, dr["id"].ToString(), dr["brand"].ToString());
                     }
                 } 
                 cm.ExecuteNonQuery();
@@ -72,7 +72,7 @@ namespace MyStore
                     frm.btnSave.Enabled = false;
                     frm.labelId.Text = dataGridView1[1, e.RowIndex].Value.ToString();
                     cn.Open();
-                  cm = new SqlCommand("delete from tblBrand where brand_id like  '" + dataGridView1[1, e.RowIndex].Value.ToString()+ "'", cn);
+                  cm = new SqlCommand("delete from tblBrand where id like  '" + dataGridView1[1, e.RowIndex].Value.ToString()+ "'", cn);
                     cm.ExecuteNonQuery();
                     cn.Close(); 
                     MessageBox.Show("Records has succesfully Deleted .","",MessageBoxButtons.OK,MessageBoxIcon.Information);
