@@ -20,8 +20,8 @@ namespace MyStore
         DBConnection dbCon = new DBConnection();
         public frmProduct(frmProductList flist)
         {
-            InitializeComponent();
             cn = new SqlConnection(dbCon.MyConnection());
+            InitializeComponent();    
             frmList = flist;
             SqlDataReader dr;
         }
@@ -55,6 +55,7 @@ namespace MyStore
             }
             catch (Exception ex)
             {
+                cn.Close();
                 MessageBox.Show(ex.Message);
             }
 
@@ -84,6 +85,7 @@ namespace MyStore
             }
             catch (Exception ex)
             {
+                cn.Close();
                 MessageBox.Show(ex.Message);
             }
 
@@ -168,6 +170,7 @@ namespace MyStore
                 }
                 catch (Exception ex)
                 {
+                    cn.Close();
                     MessageBox.Show(ex.Message);
                 }
             }

@@ -14,14 +14,15 @@ namespace MyStore
     public partial class frmCategoryList : Form
     {
 
-        SqlConnection cn = new SqlConnection();
+        SqlConnection cn ;
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
         DBConnection dbCon = new DBConnection();
         public frmCategoryList()
         {
-            InitializeComponent();
             cn = new SqlConnection(dbCon.MyConnection());
+            InitializeComponent();
+          
             loadRecords();
 
         }

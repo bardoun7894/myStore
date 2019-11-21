@@ -14,13 +14,14 @@ namespace MyStore
     public partial class frmBrand : Form
     {
         SqlConnection cn;
-        SqlCommand cm = new SqlCommand();
+        SqlCommand cm  ;
         DBConnection dbCon = new DBConnection();
         frmBrandList frmlist;
         public frmBrand(frmBrandList flist)
         {
-            InitializeComponent();
             cn = new SqlConnection(dbCon.MyConnection());
+            InitializeComponent();
+            
             frmlist = flist;
         }
         private void clear()

@@ -14,15 +14,16 @@ namespace MyStore
    
     public partial class frmCategory : Form
     {
-        SqlConnection cn = new SqlConnection();
+        SqlConnection cn  ;
         SqlCommand cm = new SqlCommand();
         
         DBConnection dbCon = new DBConnection();
         frmCategoryList frmList;
         public frmCategory(frmCategoryList flist)
         {
-            InitializeComponent();
             cn = new SqlConnection(dbCon.MyConnection());
+            InitializeComponent();
+          
             frmList = flist;
         }
         private void clear()
@@ -102,6 +103,11 @@ namespace MyStore
         }
 
         private void frmCategory_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

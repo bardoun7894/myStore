@@ -13,53 +13,22 @@ namespace MyStore
 {
     public partial class frmStockIn : Form
     {
-        SqlConnection cn = new SqlConnection();
+        SqlConnection cn  ;
         SqlCommand cm;
         SqlDataReader dr;
         DBConnection dbCon = new DBConnection();
+   
         public frmStockIn()
         {
             cn = new SqlConnection(dbCon.MyConnection());
 
             InitializeComponent();
-
-            loadProducts();
             loadStockIn();
         
 
 
         }
-       
-
-        public void loadProducts()
-
-        {
-            int i = 0;
-            dataGridView1.Rows.Clear();
-            try
-            {
-                cn.Open();
-                cm = new SqlCommand("Select pcode,pdesc,price from tblProduct where pdesc like'%" + txtSearch1.Text + "%' order by pdesc", cn);
-                //  dr = cm.ExecuteReader();
-                using (dr = cm.ExecuteReader())
-                {
-                    while (dr.Read())
-                    {
-                        i += 1;
-                        dataGridView1.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString());
-                    }
-                }
-                cm.ExecuteNonQuery();
-             
-                dr.Close();
-                cn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
+        
         public void loadStockIn()
 
         {
@@ -68,7 +37,7 @@ namespace MyStore
             try
             {
                 cn.Open();
-                cm = new SqlCommand("Select * from vwStockin ", cn);
+                cm = new SqlCommand("Select * from vwStockin where refno like '"+textRefno.Text+"' and status like 'Pending' ", cn);
                 //  dr = cm.ExecuteReader();
                 using (dr = cm.ExecuteReader())
                 {
@@ -86,6 +55,7 @@ namespace MyStore
             }
             catch (Exception ex)
             {
+                cn.Close();
                 MessageBox.Show(ex.Message);
             }
 
@@ -99,55 +69,83 @@ namespace MyStore
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            string colName = dataGridView2.Columns[e.ColumnIndex].Name;
 
-        }
-
-        private void txtSearch1_Click(object sender, EventArgs e)
-        {
-            loadProducts();
-        }
-
-        private void CheckEnter(object sender, System.Windows.Forms.KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)13)
+            if (colName == "colDelete")
             {
-                loadProducts();
-                // Enter key pressed
-            }
-        }
-
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string colName = dataGridView1.Columns[e.ColumnIndex].Name;
-            try
-            {  
-                if (colName == "colselect")
+                if (MessageBox.Show("Are you sure you want to remove this item ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    if (MessageBox.Show("Add this Item ?", " ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                    {
+                     
+                  
+                    cn.Open();
+                    cm = new SqlCommand("delete from tblStockIn where id like  '" + dataGridView2[1, e.RowIndex].Value.ToString() + "'", cn);
+                    cm.ExecuteNonQuery();
+                    cn.Close();
+                    MessageBox.Show("Item has succesfully Deleted .", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        cn.Open(); 
-                        cm = new SqlCommand("insert into tblStockIn (refno,pcode,sdate,stockinby)values(@refno,@pcode,@sdate,@stockinby) ",cn);
-                        cm.Parameters.AddWithValue("@refno", textRefno.Text);
-                        cm.Parameters.AddWithValue("@pcode", dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
-                        cm.Parameters.AddWithValue("@stockinby", textstockin.Text);
-                        cm.Parameters.AddWithValue("@sdate", dt1.Value);
-                        cm.ExecuteNonQuery();
-                        cn.Close();
-                        MessageBox.Show(" succesfully Added .", "", MessageBoxButtons.OK, MessageBoxIcon.Information); 
-                        loadProducts();
-                        loadStockIn();
-                    }
                 }
             }
+            loadStockIn();
+                }
 
-            catch (Exception ex)
+        internal void loadProducts()
+        {
+           // throw new NotImplementedException();
+        }
+
+      
+        private void frmStockIn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textRefno_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmSeachProductStockI f = new frmSeachProductStockI(this);
+            f.loadProducts();
+            f.ShowDialog();
+        }
+
+        private void metroTabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to Save it ?", "you are save it", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                try
+                {
+                    if (dataGridView2.Rows.Count > 0)
+                    {
+                        for (int i = 0; i < dataGridView2.Rows.Count; i++)
+                        {
 
-                MessageBox.Show(ex.Message);
+                            cn.Open();
+                            cm = new SqlCommand("update tblProduct set qty=qty + '" + int.Parse(dataGridView2.Rows[i].Cells[3].Value.ToString()) + "' where pcode like '" + dataGridView2.Rows[i].Cells[1].Value.ToString() + "'", cn);
+                            cm.ExecuteNonQuery();
+                            cn.Close();
+                            cn.Open();
+                            cm = new SqlCommand("update tblStockIn set qty=qty + '" + int.Parse(dataGridView2.Rows[i].Cells[5].Value.ToString()) + "', status ='Done' where id like  '" + dataGridView2.Rows[i].Cells[1].Value.ToString() + "'", cn);
+                            cm.ExecuteNonQuery();
+                            cn.Close();
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    cn.Close();
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
-            }
+    }
         }
     

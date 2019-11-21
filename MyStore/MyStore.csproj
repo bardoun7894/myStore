@@ -156,6 +156,12 @@
     <Compile Include="frmProduct.Designer.cs">
       <DependentUpon>frmProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSeachProductStockI .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeachProductStockI .Designer.cs">
+      <DependentUpon>frmSeachProductStockI .cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,12 @@
     </Compile>
     <Compile Include="MdiClass.Designer.cs">
       <DependentUpon>MdiClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ori2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ori2.Designer.cs">
+      <DependentUpon>ori2.cs</DependentUpon>
     </Compile>
     <Compile Include="OriginPage.cs">
       <SubType>Form</SubType>
@@ -269,6 +281,9 @@
     <EmbeddedResource Include="frmProduct.resx">
       <DependentUpon>frmProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSeachProductStockI .resx">
+      <DependentUpon>frmSeachProductStockI .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSettings.resx">
       <DependentUpon>FrmSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MdiClass.resx">
       <DependentUpon>MdiClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ori2.resx">
+      <DependentUpon>ori2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OriginPage.resx">
       <DependentUpon>OriginPage.cs</DependentUpon>

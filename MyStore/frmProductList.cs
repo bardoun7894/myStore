@@ -13,14 +13,15 @@ namespace MyStore
 {
     public partial class frmProductList : Form
     {
-        SqlConnection cn = new SqlConnection();
+        SqlConnection cn  ;
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
         DBConnection dbCon = new DBConnection();
         public frmProductList()
         {
-            InitializeComponent();
             cn = new SqlConnection(dbCon.MyConnection());
+            InitializeComponent();
+            
             loadRecords();
         }
 
@@ -114,6 +115,9 @@ namespace MyStore
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }
