@@ -28,6 +28,54 @@ namespace MyStore
 
 
         }
+
+
+        public void clear()
+        {
+            textRefno.Text = "";
+            textstockin.Text = "";
+            dt1.Value = DateTime.Now;
+
+
+        }
+        public void loadStockInHistory() {
+
+            int i = 0;
+            dataGridView3.Rows.Clear();
+            try
+            {
+                cn.Open();
+                cm = new SqlCommand("Select * from vwStockin where sdate between '"+dtH1.Value+"' and '"+dtH2.Value+"' and status like 'Done' ", cn);
+                //  dr = cm.ExecuteReader();
+                using (dr = cm.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+
+                        i += 1;
+                        dataGridView3.Rows.Add(i, dr[0].ToString(), dr[1].ToString()
+                        , dr[2].ToString(), dr[3].ToString(),
+                        dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
+                    }
+                }
+                cm.ExecuteNonQuery();
+                dr.Close();
+                cn.Close();
+
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            
+            
+            
+            }
+            
+            
+
         
         public void loadStockIn()
 
@@ -42,7 +90,8 @@ namespace MyStore
                 using (dr = cm.ExecuteReader())
                 {
                     while (dr.Read())
-                    {
+                    { 
+                        
                         i += 1;
                         dataGridView2.Rows.Add(i, dr[0].ToString(), dr[1].ToString()
                         , dr[2].ToString(), dr[3].ToString(),
@@ -135,9 +184,16 @@ namespace MyStore
                             cm = new SqlCommand("update tblStockIn set qty=qty + '" + int.Parse(dataGridView2.Rows[i].Cells[5].Value.ToString()) + "', status ='Done' where id like  '" + dataGridView2.Rows[i].Cells[1].Value.ToString() + "'", cn);
                             cm.ExecuteNonQuery();
                             cn.Close();
+
+
+
                         }
 
+
                     }
+
+                    clear();
+                    loadStockIn();
                 }
                 catch (Exception ex)
                 {
@@ -145,6 +201,21 @@ namespace MyStore
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadStockInHistory();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
         }

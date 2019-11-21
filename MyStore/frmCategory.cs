@@ -14,7 +14,7 @@ namespace MyStore
    
     public partial class frmCategory : Form
     {
-        SqlConnection cn  ;
+        SqlConnection cn=new SqlConnection()  ;
         SqlCommand cm = new SqlCommand();
         
         DBConnection dbCon = new DBConnection();
@@ -47,7 +47,7 @@ namespace MyStore
                     if (MessageBox.Show("Are you sure you want to update this category ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         cn.Open();
-                        cm = new SqlCommand("update tblCategory  set cate_name = (@category) where cate_id like  '" + labelId.Text + "'", cn);
+                        cm = new SqlCommand("update tblCategory  set category = (@category) where  id like  '" + labelId.Text + "'", cn);
                         cm.Parameters.AddWithValue("@category", txtCategory.Text);
                         cm.ExecuteNonQuery();
                         cn.Close();
@@ -81,7 +81,7 @@ namespace MyStore
                 if (MessageBox.Show("Are you sure you want to save this Category ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("INSERT INTO tblCategory(cate_name)values(@category) ", cn);
+                    cm = new SqlCommand("INSERT INTO tblCategory(category)values(@category) ", cn);
                     cm.Parameters.AddWithValue("@category", txtCategory.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();

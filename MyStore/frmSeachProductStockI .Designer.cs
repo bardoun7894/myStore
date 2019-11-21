@@ -28,62 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSeachProductStockI));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtSearch1 = new MetroFramework.Controls.MetroTextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSeachProductStockI));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.colselect = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtSearch1 = new MetroFramework.Controls.MetroTextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtSearch1
-            // 
-            // 
-            // 
-            // 
-            this.txtSearch1.CustomButton.Image = null;
-            this.txtSearch1.CustomButton.Location = new System.Drawing.Point(339, 2);
-            this.txtSearch1.CustomButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSearch1.CustomButton.Name = "";
-            this.txtSearch1.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtSearch1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtSearch1.CustomButton.TabIndex = 1;
-            this.txtSearch1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtSearch1.CustomButton.UseSelectable = true;
-            this.txtSearch1.CustomButton.Visible = false;
-            this.txtSearch1.DisplayIcon = true;
-            this.txtSearch1.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch1.Icon")));
-            this.txtSearch1.Lines = new string[0];
-            this.txtSearch1.Location = new System.Drawing.Point(518, 6);
-            this.txtSearch1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSearch1.MaxLength = 32767;
-            this.txtSearch1.Name = "txtSearch1";
-            this.txtSearch1.PasswordChar = '\0';
-            this.txtSearch1.PromptText = "Search Here.";
-            this.txtSearch1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtSearch1.SelectedText = "";
-            this.txtSearch1.SelectionLength = 0;
-            this.txtSearch1.SelectionStart = 0;
-            this.txtSearch1.ShortcutsEnabled = true;
-            this.txtSearch1.Size = new System.Drawing.Size(367, 30);
-            this.txtSearch1.TabIndex = 2;
-            this.txtSearch1.UseSelectable = true;
-            this.txtSearch1.WaterMark = "Search Here.";
-            this.txtSearch1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtSearch1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtSearch1.Click += new System.EventHandler(this.txtSearch1_Click);
-            this.txtSearch1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnter);
             // 
             // panel1
             // 
@@ -97,18 +60,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(933, 40);
             this.panel1.TabIndex = 16;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(891, 5);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -190,6 +141,14 @@
             this.Column7.Name = "Column7";
             this.Column7.Width = 54;
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 5;
+            // 
             // colselect
             // 
             this.colselect.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -197,6 +156,57 @@
             this.colselect.Image = ((System.Drawing.Image)(resources.GetObject("colselect.Image")));
             this.colselect.Name = "colselect";
             this.colselect.Width = 5;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(891, 5);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // txtSearch1
+            // 
+            // 
+            // 
+            // 
+            this.txtSearch1.CustomButton.Image = null;
+            this.txtSearch1.CustomButton.Location = new System.Drawing.Point(339, 2);
+            this.txtSearch1.CustomButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch1.CustomButton.Name = "";
+            this.txtSearch1.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtSearch1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtSearch1.CustomButton.TabIndex = 1;
+            this.txtSearch1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtSearch1.CustomButton.UseSelectable = true;
+            this.txtSearch1.CustomButton.Visible = false;
+            this.txtSearch1.DisplayIcon = true;
+            this.txtSearch1.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch1.Icon")));
+            this.txtSearch1.Lines = new string[0];
+            this.txtSearch1.Location = new System.Drawing.Point(518, 6);
+            this.txtSearch1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch1.MaxLength = 32767;
+            this.txtSearch1.Name = "txtSearch1";
+            this.txtSearch1.PasswordChar = '\0';
+            this.txtSearch1.PromptText = "Search Here.";
+            this.txtSearch1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSearch1.SelectedText = "";
+            this.txtSearch1.SelectionLength = 0;
+            this.txtSearch1.SelectionStart = 0;
+            this.txtSearch1.ShortcutsEnabled = true;
+            this.txtSearch1.Size = new System.Drawing.Size(367, 30);
+            this.txtSearch1.TabIndex = 2;
+            this.txtSearch1.UseSelectable = true;
+            this.txtSearch1.WaterMark = "Search Here.";
+            this.txtSearch1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtSearch1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearch1.Click += new System.EventHandler(this.txtSearch1_Click);
+            this.txtSearch1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnter);
             // 
             // frmSeachProductStockI
             // 
@@ -213,8 +223,8 @@
             this.Text = "frmSeachProductStockI";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -230,5 +240,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewImageColumn colselect;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
     }
 }

@@ -79,6 +79,7 @@ namespace MyStore
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1300, 35);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // btnRestaurar
             // 
@@ -406,6 +407,7 @@ namespace MyStore
             this.panel3.Size = new System.Drawing.Size(1080, 615);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             // 
             // label1
             // 
@@ -429,7 +431,7 @@ namespace MyStore
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ori2";
             this.Text = "ori2";
-            this.panel1.ResumeLayout(false);
+                 this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();

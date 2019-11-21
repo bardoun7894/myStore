@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace MyStore
 {
+
+
+
     public partial class ori2 : Form
     {
         public ori2()
         {
             InitializeComponent();
+
+
+
+
         }
  
 
@@ -115,5 +123,33 @@ namespace MyStore
             f.BringToFront();
             f.Show();
         }
+
+
+
+
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+       
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
     }
+
+
+  
+
+
 }
