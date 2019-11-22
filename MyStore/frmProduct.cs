@@ -244,6 +244,7 @@ namespace MyStore
                 }
                 catch (Exception ex)
                 {
+                    cn.Close();
                     MessageBox.Show(ex.Message);
                 }
             }

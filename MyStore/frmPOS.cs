@@ -12,17 +12,18 @@ namespace MyStore
 {
     public partial class frmPOS : Form
     {
+        frmTransaction f=new frmTransaction();
+    
         public frmPOS()
         {
             InitializeComponent();
+          
         }
        public void loadPos()
         {
-            frmTransaction f = new frmTransaction();
+             
             f.Dock = DockStyle.Fill;
             f.TopLevel = false;
-
-
             f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             panel10.Controls.Clear();
             panel10.Controls.Add(f);
@@ -54,7 +55,9 @@ namespace MyStore
 
         private void button18_Click(object sender, EventArgs e)
         {
-           
+            f.getTransno();
+            f.barcodeSearch.Enabled = true;
+            f.barcodeSearch.Focus();
         }
     }
 }

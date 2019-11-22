@@ -45,14 +45,14 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnPassword = new System.Windows.Forms.Button();
+            this.btnDailySales = new System.Windows.Forms.Button();
+            this.btnCancelSales = new System.Windows.Forms.Button();
+            this.btnSettle = new System.Windows.Forms.Button();
+            this.btnDiscount = new System.Windows.Forms.Button();
+            this.btnSearchProduct = new System.Windows.Forms.Button();
+            this.btnTransaction = new System.Windows.Forms.Button();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
@@ -86,21 +86,21 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnClose);
             this.panel2.Controls.Add(this.panel12);
-            this.panel2.Controls.Add(this.button12);
+            this.panel2.Controls.Add(this.btnPassword);
             this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.button13);
+            this.panel2.Controls.Add(this.btnDailySales);
             this.panel2.Controls.Add(this.panel8);
-            this.panel2.Controls.Add(this.button14);
+            this.panel2.Controls.Add(this.btnCancelSales);
             this.panel2.Controls.Add(this.panel9);
-            this.panel2.Controls.Add(this.button15);
+            this.panel2.Controls.Add(this.btnSettle);
             this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.button16);
+            this.panel2.Controls.Add(this.btnDiscount);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.button17);
+            this.panel2.Controls.Add(this.btnSearchProduct);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.button18);
+            this.panel2.Controls.Add(this.btnTransaction);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 35);
             this.panel2.Name = "panel2";
@@ -231,144 +231,144 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnClose
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(4, 568);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 32);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "[F10]    Close";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(4, 568);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(217, 32);
+            this.btnClose.TabIndex = 22;
+            this.btnClose.Text = "[F10]    Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button12
+            // btnPassword
             // 
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(3, 395);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(217, 32);
-            this.button12.TabIndex = 14;
-            this.button12.Text = "     [F7]    Change Password";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPassword.FlatAppearance.BorderSize = 0;
+            this.btnPassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.btnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPassword.ForeColor = System.Drawing.Color.White;
+            this.btnPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnPassword.Image")));
+            this.btnPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPassword.Location = new System.Drawing.Point(3, 395);
+            this.btnPassword.Name = "btnPassword";
+            this.btnPassword.Size = new System.Drawing.Size(217, 32);
+            this.btnPassword.TabIndex = 14;
+            this.btnPassword.Text = "     [F7]    Change Password";
+            this.btnPassword.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btnDailySales
             // 
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(2, 357);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(217, 32);
-            this.button13.TabIndex = 12;
-            this.button13.Text = " [F6]    Daily Sales";
-            this.button13.UseVisualStyleBackColor = true;
+            this.btnDailySales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDailySales.FlatAppearance.BorderSize = 0;
+            this.btnDailySales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.btnDailySales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDailySales.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDailySales.ForeColor = System.Drawing.Color.White;
+            this.btnDailySales.Image = ((System.Drawing.Image)(resources.GetObject("btnDailySales.Image")));
+            this.btnDailySales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDailySales.Location = new System.Drawing.Point(2, 357);
+            this.btnDailySales.Name = "btnDailySales";
+            this.btnDailySales.Size = new System.Drawing.Size(217, 32);
+            this.btnDailySales.TabIndex = 12;
+            this.btnDailySales.Text = " [F6]    Daily Sales";
+            this.btnDailySales.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // btnCancelSales
             // 
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(3, 316);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(217, 32);
-            this.button14.TabIndex = 10;
-            this.button14.Text = " [F5]  Cancel Sales ";
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnCancelSales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelSales.FlatAppearance.BorderSize = 0;
+            this.btnCancelSales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.btnCancelSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelSales.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelSales.ForeColor = System.Drawing.Color.White;
+            this.btnCancelSales.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelSales.Image")));
+            this.btnCancelSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelSales.Location = new System.Drawing.Point(3, 316);
+            this.btnCancelSales.Name = "btnCancelSales";
+            this.btnCancelSales.Size = new System.Drawing.Size(217, 32);
+            this.btnCancelSales.TabIndex = 10;
+            this.btnCancelSales.Text = " [F5]  Cancel Sales ";
+            this.btnCancelSales.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // btnSettle
             // 
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(3, 275);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(217, 32);
-            this.button15.TabIndex = 8;
-            this.button15.Text = "     [F4]   Settle Payment";
-            this.button15.UseVisualStyleBackColor = true;
+            this.btnSettle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSettle.FlatAppearance.BorderSize = 0;
+            this.btnSettle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.btnSettle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettle.ForeColor = System.Drawing.Color.White;
+            this.btnSettle.Image = ((System.Drawing.Image)(resources.GetObject("btnSettle.Image")));
+            this.btnSettle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettle.Location = new System.Drawing.Point(3, 275);
+            this.btnSettle.Name = "btnSettle";
+            this.btnSettle.Size = new System.Drawing.Size(217, 32);
+            this.btnSettle.TabIndex = 8;
+            this.btnSettle.Text = "     [F4]   Settle Payment";
+            this.btnSettle.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // btnDiscount
             // 
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(4, 235);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(217, 32);
-            this.button16.TabIndex = 6;
-            this.button16.Text = "  [F3]  Add Discount ";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnDiscount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDiscount.FlatAppearance.BorderSize = 0;
+            this.btnDiscount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiscount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscount.ForeColor = System.Drawing.Color.White;
+            this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
+            this.btnDiscount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDiscount.Location = new System.Drawing.Point(4, 235);
+            this.btnDiscount.Name = "btnDiscount";
+            this.btnDiscount.Size = new System.Drawing.Size(217, 32);
+            this.btnDiscount.TabIndex = 6;
+            this.btnDiscount.Text = "  [F3]  Add Discount ";
+            this.btnDiscount.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // btnSearchProduct
             // 
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(4, 194);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(217, 32);
-            this.button17.TabIndex = 4;
-            this.button17.Text = "     [F2]     Search Product ";
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnSearchProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchProduct.FlatAppearance.BorderSize = 0;
+            this.btnSearchProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
+            this.btnSearchProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchProduct.Image")));
+            this.btnSearchProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearchProduct.Location = new System.Drawing.Point(4, 194);
+            this.btnSearchProduct.Name = "btnSearchProduct";
+            this.btnSearchProduct.Size = new System.Drawing.Size(217, 32);
+            this.btnSearchProduct.TabIndex = 4;
+            this.btnSearchProduct.Text = "     [F2]     Search Product ";
+            this.btnSearchProduct.UseVisualStyleBackColor = true;
             // 
-            // button18
+            // btnTransaction
             // 
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(4, 153);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(217, 32);
-            this.button18.TabIndex = 2;
-            this.button18.Text = " [F1]     Transaction ";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.btnTransaction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTransaction.FlatAppearance.BorderSize = 0;
+            this.btnTransaction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.btnTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransaction.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTransaction.ForeColor = System.Drawing.Color.White;
+            this.btnTransaction.Image = ((System.Drawing.Image)(resources.GetObject("btnTransaction.Image")));
+            this.btnTransaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTransaction.Location = new System.Drawing.Point(4, 153);
+            this.btnTransaction.Name = "btnTransaction";
+            this.btnTransaction.Size = new System.Drawing.Size(217, 32);
+            this.btnTransaction.TabIndex = 2;
+            this.btnTransaction.Text = " [F1]     Transaction ";
+            this.btnTransaction.UseVisualStyleBackColor = true;
+            this.btnTransaction.Click += new System.EventHandler(this.button18_Click);
             // 
             // btnRestaurar
             // 
@@ -461,21 +461,21 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnPassword;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button btnDailySales;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnCancelSales;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btnSettle;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnDiscount;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button btnSearchProduct;
+        private System.Windows.Forms.Button btnTransaction;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel11;
