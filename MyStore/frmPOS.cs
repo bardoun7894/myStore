@@ -16,9 +16,24 @@ namespace MyStore
         {
             InitializeComponent();
         }
+       public void loadPos()
+        {
+            frmTransaction f = new frmTransaction();
+            f.Dock = DockStyle.Fill;
+            f.TopLevel = false;
+
+
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            panel10.Controls.Clear();
+            panel10.Controls.Add(f);
+
+            f.BringToFront();
+            f.Show();
+        }
 
         private void frmPOS_Load(object sender, EventArgs e)
         {
+            loadPos();
 
         }
 
@@ -30,6 +45,16 @@ namespace MyStore
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
