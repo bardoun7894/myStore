@@ -20,12 +20,11 @@ namespace MyStore
         public frmProductList()
         {
             cn = new SqlConnection(dbCon.MyConnection());
-            InitializeComponent();
-            
+            InitializeComponent(); 
             loadRecords();
         }
 
-
+         
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             frmProduct frm = new frmProduct(this);
@@ -67,8 +66,6 @@ namespace MyStore
                     cm.ExecuteNonQuery();
                     cn.Close();
                     MessageBox.Show("Records has succesfully Deleted .", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
                     loadRecords();
                 }
             }

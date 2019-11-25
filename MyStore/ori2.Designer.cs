@@ -37,27 +37,16 @@ namespace MyStore
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnxcerrar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -134,27 +123,16 @@ namespace MyStore
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
-            this.panel2.Controls.Add(this.panel13);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button10);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.panel8);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 35);
@@ -162,13 +140,22 @@ namespace MyStore
             this.panel2.Size = new System.Drawing.Size(220, 615);
             this.panel2.TabIndex = 1;
             // 
-            // panel13
+            // button1
             // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel13.Location = new System.Drawing.Point(1, 166);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(5, 32);
-            this.panel13.TabIndex = 23;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 128);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(217, 32);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "DashBoard  ";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
@@ -180,9 +167,9 @@ namespace MyStore
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(3, 166);
+            this.button10.Location = new System.Drawing.Point(0, 166);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(217, 32);
+            this.button10.Size = new System.Drawing.Size(220, 32);
             this.button10.TabIndex = 22;
             this.button10.Text = "POS            ";
             this.button10.UseVisualStyleBackColor = true;
@@ -199,14 +186,6 @@ namespace MyStore
             this.label1.TabIndex = 21;
             this.label1.Text = "Administrateur";
             // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel10.Location = new System.Drawing.Point(0, 488);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(5, 32);
-            this.panel10.TabIndex = 19;
-            // 
             // button7
             // 
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -217,20 +196,12 @@ namespace MyStore
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(2, 488);
+            this.button7.Location = new System.Drawing.Point(2, 444);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(217, 32);
             this.button7.TabIndex = 18;
             this.button7.Text = "Invoices     ";
             this.button7.UseVisualStyleBackColor = true;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel11.Location = new System.Drawing.Point(0, 448);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(5, 32);
-            this.panel11.TabIndex = 17;
             // 
             // button8
             // 
@@ -242,20 +213,12 @@ namespace MyStore
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(3, 447);
+            this.button8.Location = new System.Drawing.Point(3, 403);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(217, 32);
             this.button8.TabIndex = 16;
             this.button8.Text = "   Records         ";
             this.button8.UseVisualStyleBackColor = true;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel12.Location = new System.Drawing.Point(0, 406);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(5, 32);
-            this.panel12.TabIndex = 15;
             // 
             // button9
             // 
@@ -267,21 +230,13 @@ namespace MyStore
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(3, 406);
+            this.button9.Location = new System.Drawing.Point(3, 362);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(217, 32);
             this.button9.TabIndex = 14;
             this.button9.Text = "  Brands         ";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.btnBrand_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel7.Location = new System.Drawing.Point(0, 368);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(5, 32);
-            this.panel7.TabIndex = 13;
             // 
             // button4
             // 
@@ -293,47 +248,13 @@ namespace MyStore
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(2, 368);
+            this.button4.Location = new System.Drawing.Point(2, 324);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(217, 32);
             this.button4.TabIndex = 12;
             this.button4.Text = "  Stock           ";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.btnStockList_Click);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel8.Location = new System.Drawing.Point(0, 328);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(5, 32);
-            this.panel8.TabIndex = 11;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 327);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(217, 32);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "  Manage Sales";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel9.Location = new System.Drawing.Point(0, 286);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(5, 32);
-            this.panel9.TabIndex = 9;
             // 
             // button6
             // 
@@ -349,17 +270,9 @@ namespace MyStore
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(217, 32);
             this.button6.TabIndex = 8;
-            this.button6.Text = "Catagories   ";
+            this.button6.Text = "Catagories    ";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.btnCategory_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel6.Location = new System.Drawing.Point(1, 246);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(5, 32);
-            this.panel6.TabIndex = 7;
             // 
             // button3
             // 
@@ -379,14 +292,6 @@ namespace MyStore
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.productBtn_Click);
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel5.Location = new System.Drawing.Point(1, 205);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 32);
-            this.panel5.TabIndex = 5;
-            // 
             // button2
             // 
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -404,31 +309,6 @@ namespace MyStore
             this.button2.Text = "  Manage Sales";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel4.Location = new System.Drawing.Point(1, 128);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 32);
-            this.panel4.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(4, 128);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 32);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "DashBoard  ";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -486,25 +366,14 @@ namespace MyStore
         private System.Windows.Forms.PictureBox btnxcerrar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button2;
-        private Panel panel10;
         private Button button7;
-        private Panel panel11;
         private Button button8;
-        private Panel panel12;
         private Button button9;
-        private Panel panel7;
         private Button button4;
-        private Panel panel8;
-        private Button button5;
-        private Panel panel9;
         private Button button6;
         private Label label1;
-        private Panel panel13;
         private Button button10;
     }
 }

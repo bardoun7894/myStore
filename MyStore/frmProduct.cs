@@ -21,7 +21,8 @@ namespace MyStore
         public frmProduct(frmProductList flist)
         {
             cn = new SqlConnection(dbCon.MyConnection());
-            InitializeComponent();    
+            InitializeComponent();
+
             frmList = flist;
             SqlDataReader dr;
         }
@@ -132,7 +133,7 @@ namespace MyStore
                         {
                             dr.Read();
                             if (dr.HasRows)
-                            { cid = dr[0].ToString(); }
+                            { bid = dr[0].ToString(); }
                         }
 
                         dr.Close();
@@ -145,7 +146,7 @@ namespace MyStore
                         {
                             dr.Read();
                             if (dr.HasRows)
-                            { bid = dr[0].ToString(); }
+                            { cid = dr[0].ToString(); }
                         }
 
                         dr.Close();
@@ -203,10 +204,9 @@ namespace MyStore
                         //  dr = cm.ExecuteReader();
                         using (dr = cm.ExecuteReader())
 
-                        {
-                            dr.Read();
+                        {  dr.Read();
                             if (dr.HasRows)
-                            { cid = dr[0].ToString(); }
+                            { bid = dr[0].ToString(); }
                         }
 
                         dr.Close();
@@ -219,7 +219,9 @@ namespace MyStore
                         {
                             dr.Read();
                             if (dr.HasRows)
-                            { bid = dr[0].ToString(); }
+                            { cid = dr[0].ToString(); 
+                           
+                            }
                         }
 
                         dr.Close();
@@ -236,14 +238,15 @@ namespace MyStore
 
                         cm.ExecuteNonQuery();
                         cn.Close();
-                        MessageBox.Show("Products has succesfully saved .");
-                        clear();
+                        MessageBox.Show("Products has succesfully Updated .");
+                  
                         frmList.loadRecords();
                         this.Dispose();
                     }
                 }
                 catch (Exception ex)
                 {
+                    dr.Close();
                     cn.Close();
                     MessageBox.Show(ex.Message);
                 }

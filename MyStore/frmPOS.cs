@@ -35,6 +35,10 @@ namespace MyStore
         private void frmPOS_Load(object sender, EventArgs e)
         {
             loadPos();
+            f.getTransno();
+            f.barcodeSearch.Enabled = true;
+            f.barcodeSearch.Focus();
+
 
         }
 
@@ -53,11 +57,36 @@ namespace MyStore
 
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void btnTrasaction_Click(object sender, EventArgs e)
         {
-            f.getTransno();
-            f.barcodeSearch.Enabled = true;
-            f.barcodeSearch.Focus();
+            if (MessageBox.Show("Are you sure you want to open a new Tansaction", 
+                "New Tansaction", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                f.getTransno();
+                f.barcodeSearch.Enabled = true;
+                f.barcodeSearch.Focus();
+            }
+        
+
+        }
+
+        private void btnSearchProduct_Click(object sender, EventArgs e)
+        {
+         
+            frmLookUp fr = new frmLookUp(f);
+            
+             fr.ShowDialog();
+
+        }
+
+        private void btnDiscount_Click(object sender, EventArgs e)
+        {
+            frmDiscount fr = new frmDiscount(f);
+            fr.lblId.Text = f.numId();
+            fr.lblPrice.Text = f.numPrice();
+
+            fr.ShowDialog();
+
         }
     }
 }

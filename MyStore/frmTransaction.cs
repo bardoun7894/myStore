@@ -13,6 +13,8 @@ namespace MyStore
 {
     public partial class frmTransaction : Form
     {
+        string id;
+        string price; 
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
@@ -23,6 +25,14 @@ namespace MyStore
             InitializeComponent();
             lblDate.Text = DateTime.Now.ToLongDateString();
             this.KeyPreview = true;
+        }
+        public String  numId()
+        {
+            return id;
+        }
+        public String numPrice()
+        {
+            return price;
         }
 
         private void panel10_Paint(object sender, PaintEventArgs e)
@@ -69,6 +79,42 @@ namespace MyStore
             }
         }
 
+        public void loadCart()
+        {
+            int i = 0;
+            double total = 0;
+            double discount = 0;
+            try
+            {
+                dataGridView1.Rows.Clear();
+                cn.Open();
+                cm = new SqlCommand("select c.id,c.pcode,p.pdesc, c.price , c.qty,c.disc,c.total from tblCart as c inner join tblProduct as p on c.pcode=p.pcode where transno like '"+lblTransno.Text+"'", cn);
+                //  dr = cm.ExecuteReader();
+                using (dr = cm.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        i += 1;
+                       total += double.Parse(dr["total"].ToString());
+                        discount += double.Parse(dr["disc"].ToString());
+                        dataGridView1.Rows.Add(i, dr["id"].ToString(), dr["pdesc"].ToString(), dr["price"].ToString(), dr["qty"].ToString(), dr["disc"].ToString(), dr["total"].ToString());
+                    }
+                }
+                cm.ExecuteNonQuery();
+                dr.Close();
+                cn.Close();
+           lblSaletotal.Text = total.ToString();
+                lblDiscount.Text = discount.ToString();
+              getCartTotal();
+
+            }
+            catch (Exception ex)
+            {
+                cn.Close();
+                MessageBox.Show(ex.Message);
+            }
+           
+        }
         private void barcodeSearch_Click(object sender, EventArgs e)
         {
          
@@ -88,12 +134,24 @@ namespace MyStore
                     dr.Read();
                     if (dr.HasRows)
                     {
+                        string pcode = dr["pcode"].ToString();
+                        double price = double.Parse(dr["price"].ToString());
                         frmQty f = new frmQty(this);
-                        f.ShowDialog();
-                    }
-                    dr.Close();
-                    cn.Close();
+                        f.productDetails(pcode, price, lblTransno.Text);
 
+                        dr.Close();
+                        cn.Close();
+
+
+                        f.ShowDialog();
+
+                    }
+                    else
+                    {
+
+                        dr.Close();
+                        cn.Close();
+                    }
                 }
 
             }
@@ -102,6 +160,69 @@ namespace MyStore
                 cn.Close();
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        public void getCartTotal()
+        {
+
+            
+            double discount = double.Parse(lblDiscount.Text);
+            double sales = double.Parse(lblSaletotal.Text);
+            double vat = sales*dbCon.GetVal();
+           
+            double vatable = sales-vat;
+            lblVat.Text = vat.ToString("#,##0.00");
+            lblVatable.Text = vatable.ToString("#,##0.00");
+            lblDisplay.Text = sales.ToString();
+
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string colName = dataGridView1.Columns[e.ColumnIndex].Name;
+            try
+            {
+                if (colName == "delete")
+                {
+
+
+                    if (MessageBox.Show("delete this Item from Cart ?", " ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        cn.Open();
+                        cm = new SqlCommand(" delete from tblCart where id like '"+dataGridView1.Rows[e.RowIndex].Cells[1].Value+"'",cn);
+                        cm.ExecuteNonQuery();
+                        cn.Close();
+                        loadCart();
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                cn.Close();
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            int i = dataGridView1.CurrentRow.Index;
+            id = dataGridView1[1, i].Value.ToString();
+            price= dataGridView1[3, i].Value.ToString();
+
+
+        }
+
+        private void lblDisplay_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

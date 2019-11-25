@@ -39,6 +39,8 @@
             this.txtqty.Name = "txtqty";
             this.txtqty.Size = new System.Drawing.Size(147, 64);
             this.txtqty.TabIndex = 0;
+            this.txtqty.TextChanged += new System.EventHandler(this.txtqty_TextChanged);
+            this.txtqty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnter);
             // 
             // frmQty
             // 
@@ -51,8 +53,10 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmQty";
-            this.Text = "quantity";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "QUANTITY";
             this.Load += new System.EventHandler(this.frmQty_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmQty_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

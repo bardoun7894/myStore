@@ -31,9 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPOS));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -41,9 +42,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnPassword = new System.Windows.Forms.Button();
@@ -57,7 +56,8 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnxcerrar = new System.Windows.Forms.PictureBox();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -107,6 +107,16 @@
             this.panel2.Size = new System.Drawing.Size(220, 615);
             this.panel2.TabIndex = 35;
             // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.label1);
+            this.panel11.Controls.Add(this.pictureBox1);
+            this.panel11.Controls.Add(this.label2);
+            this.panel11.Location = new System.Drawing.Point(4, 4);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(213, 152);
+            this.panel11.TabIndex = 24;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -117,15 +127,6 @@
             this.label1.Size = new System.Drawing.Size(141, 16);
             this.label1.TabIndex = 24;
             this.label1.Text = "Cashier Name here";
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
-            this.panel3.Location = new System.Drawing.Point(1, 568);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 32);
-            this.panel3.TabIndex = 23;
             // 
             // label2
             // 
@@ -138,6 +139,15 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "POS Software";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(144)))), ((int)(((byte)(131)))));
+            this.panel3.Location = new System.Drawing.Point(1, 568);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 32);
+            this.panel3.TabIndex = 23;
             // 
             // panel12
             // 
@@ -195,31 +205,13 @@
             this.panel4.Size = new System.Drawing.Size(5, 32);
             this.panel4.TabIndex = 3;
             // 
-            // panel11
+            // panel10
             // 
-            this.panel11.Controls.Add(this.label1);
-            this.panel11.Controls.Add(this.pictureBox1);
-            this.panel11.Controls.Add(this.label2);
-            this.panel11.Location = new System.Drawing.Point(4, 4);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(213, 152);
-            this.panel11.TabIndex = 24;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = " ";
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 16;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 5;
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(220, 35);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1080, 615);
+            this.panel10.TabIndex = 36;
             // 
             // pictureBox1
             // 
@@ -332,8 +324,9 @@
             this.btnDiscount.Name = "btnDiscount";
             this.btnDiscount.Size = new System.Drawing.Size(217, 32);
             this.btnDiscount.TabIndex = 6;
-            this.btnDiscount.Text = "  [F3]  Add Discount ";
+            this.btnDiscount.Text = "  [F3]  Add Discount     ";
             this.btnDiscount.UseVisualStyleBackColor = true;
+            this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
             // btnSearchProduct
             // 
@@ -351,6 +344,7 @@
             this.btnSearchProduct.TabIndex = 4;
             this.btnSearchProduct.Text = "     [F2]     Search Product ";
             this.btnSearchProduct.UseVisualStyleBackColor = true;
+            this.btnSearchProduct.Click += new System.EventHandler(this.btnSearchProduct_Click);
             // 
             // btnTransaction
             // 
@@ -366,9 +360,9 @@
             this.btnTransaction.Name = "btnTransaction";
             this.btnTransaction.Size = new System.Drawing.Size(217, 32);
             this.btnTransaction.TabIndex = 2;
-            this.btnTransaction.Text = " [F1]     Transaction ";
+            this.btnTransaction.Text = "    [F1]  New Transaction ";
             this.btnTransaction.UseVisualStyleBackColor = true;
-            this.btnTransaction.Click += new System.EventHandler(this.button18_Click);
+            this.btnTransaction.Click += new System.EventHandler(this.btnTrasaction_Click);
             // 
             // btnRestaurar
             // 
@@ -414,13 +408,19 @@
             this.btnxcerrar.TabIndex = 4;
             this.btnxcerrar.TabStop = false;
             // 
-            // panel10
+            // dataGridViewImageColumn1
             // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(220, 35);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1080, 615);
-            this.panel10.TabIndex = 36;
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = " ";
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
             // frmPOS
             // 
