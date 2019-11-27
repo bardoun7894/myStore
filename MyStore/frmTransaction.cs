@@ -21,10 +21,12 @@ namespace MyStore
         DBConnection dbCon = new DBConnection();
         public frmTransaction()
         {
+
             cn = new SqlConnection(dbCon.MyConnection());
             InitializeComponent();
             lblDate.Text = DateTime.Now.ToLongDateString();
             this.KeyPreview = true;
+
         }
         public String  numId()
         {
@@ -80,7 +82,7 @@ namespace MyStore
         }
 
         public void loadCart()
-        {
+        { 
             int i = 0;
             double total = 0;
             double discount = 0;
@@ -106,6 +108,8 @@ namespace MyStore
            lblSaletotal.Text = total.ToString();
                 lblDiscount.Text = discount.ToString();
               getCartTotal();
+
+            
 
             }
             catch (Exception ex)
@@ -179,7 +183,7 @@ namespace MyStore
             double vatable = sales-vat;
             lblVat.Text = vat.ToString("#,##0.00");
             lblVatable.Text = vatable.ToString("#,##0.00");
-            lblDisplay.Text = sales.ToString();
+            lblDisplay.Text = "dh"+sales.ToString() ;
 
             
         }
@@ -223,6 +227,22 @@ namespace MyStore
         private void lblDisplay_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToString("hh:MM:ss tt");
+            lblDtN.Text = DateTime.Now.ToLongDateString();
         }
     }
 }

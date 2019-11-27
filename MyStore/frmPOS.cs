@@ -17,7 +17,17 @@ namespace MyStore
         public frmPOS()
         {
             InitializeComponent();
-          
+            Boolean hasRecord = false;
+
+            if (hasRecord)
+            { 
+                btnSettle.Enabled = true;
+                btnDiscount.Enabled = true;
+            } else {
+  
+                btnSettle.Enabled = false;
+                btnDiscount.Enabled = false;
+            }
         }
        public void loadPos()
         {
@@ -87,6 +97,14 @@ namespace MyStore
 
             fr.ShowDialog();
 
+        }
+
+        private void btnSettle_Click(object sender, EventArgs e)
+        {
+        
+            frmSettlePayment fr = new frmSettlePayment();
+            fr.lblSale.Text = f.lblSaletotal.Text;
+            fr.ShowDialog();
         }
     }
 }

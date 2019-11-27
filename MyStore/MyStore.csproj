@@ -192,6 +192,12 @@
     <Compile Include="FrmSettings.Designer.cs">
       <DependentUpon>FrmSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSettlePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettlePayment.Designer.cs">
+      <DependentUpon>frmSettlePayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStockIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -328,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSettings.resx">
       <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettlePayment.resx">
+      <DependentUpon>frmSettlePayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStockIn.resx">
       <DependentUpon>frmStockIn.cs</DependentUpon>
