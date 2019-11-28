@@ -174,10 +174,10 @@
   </metadata>
   <data name="delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAACGSURBVDhPvZOxCoAwDET7BX6uWR1Fv9VFBS0OmkoPgl6KDvog3Elf6FLDJ4wi/SSy6Owp57pu
-        89EzdCkOTVOlnlK/1/OgRL7t0eSVO0y+TlY5VmKJ7mIlluguVmKJ7mIlluguVmKJ7mIlluguVmKJ7qJC
-        hOhM+UXqm+9U2i5LmO31P/EDIRwi0fwKds7JTAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIZJREFUOE+9
+        k7EKgDAMRPsFfq5ZHUW/1UUFLQ6aSg+CXooO+iDcSV/oUsMnjCL9JLLo7Cnnum7z0TN0KQ5NU6WeUr/X
+        86BEvu3R5JU7TL5OVjlWYonuYiWW6C5WYonuYiWW6C5WYonuYiWW6C5WYonuokKE6Ez5Reqb71TaLkuY
+        7fU/8QMhHCLR/Ap2zslMAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="dataGridViewImageColumn1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

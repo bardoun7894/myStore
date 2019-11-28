@@ -13,10 +13,10 @@ namespace MyStore
 {
     public partial class frmBrand : Form
     {
-        SqlConnection cn;
+        readonly SqlConnection cn;
         SqlCommand cm  ;
-        DBConnection dbCon = new DBConnection();
-        frmBrandList frmlist;
+        readonly DBConnection dbCon = new DBConnection();
+        readonly frmBrandList frmlist;
         public frmBrand(frmBrandList flist)
         {
             cn = new SqlConnection(dbCon.MyConnection());

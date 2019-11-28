@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBrand));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.brdName = new System.Windows.Forms.Label();
             this.txtBrand = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.labelId = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +53,18 @@
             this.panel1.Size = new System.Drawing.Size(640, 40);
             this.panel1.TabIndex = 1;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(604, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -60,7 +72,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 21);
+            this.label1.Size = new System.Drawing.Size(136, 28);
             this.label1.TabIndex = 4;
             this.label1.Text = "Brand Module";
             // 
@@ -69,7 +81,7 @@
             this.brdName.AutoSize = true;
             this.brdName.Location = new System.Drawing.Point(13, 90);
             this.brdName.Name = "brdName";
-            this.brdName.Size = new System.Drawing.Size(81, 17);
+            this.brdName.Size = new System.Drawing.Size(106, 23);
             this.brdName.TabIndex = 2;
             this.brdName.Text = "Brand Name";
             // 
@@ -77,7 +89,7 @@
             // 
             this.txtBrand.Location = new System.Drawing.Point(129, 87);
             this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(485, 25);
+            this.txtBrand.Size = new System.Drawing.Size(485, 29);
             this.txtBrand.TabIndex = 3;
             // 
             // btnSave
@@ -126,26 +138,14 @@
             this.labelId.AutoSize = true;
             this.labelId.Location = new System.Drawing.Point(267, 55);
             this.labelId.Name = "labelId";
-            this.labelId.Size = new System.Drawing.Size(33, 17);
+            this.labelId.Size = new System.Drawing.Size(42, 23);
             this.labelId.TabIndex = 7;
             this.labelId.Text = "lblid";
             this.labelId.Visible = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(598, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // frmBrand
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 185);
             this.ControlBox = false;

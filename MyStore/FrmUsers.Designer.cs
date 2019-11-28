@@ -32,6 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupLogin = new System.Windows.Forms.GroupBox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            
             this.textBoxPass = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.textboxUser = new System.Windows.Forms.TextBox();
@@ -313,6 +314,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
+        
         private Bunifu.Framework.UI.BunifuCustomLabel lblKind;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private System.Windows.Forms.TextBox textBoxAdresse;

@@ -155,7 +155,8 @@ namespace MyStore
         private void btnPOS_Click(object sender, EventArgs e)
         {
 
-            frmPOS f = new frmPOS();
+            frmTransaction f = new frmTransaction();
+           // frmPOS f = new frmPOS();
             f.ShowDialog();
         }
     }

@@ -34,17 +34,9 @@
     <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView, Version=1.11.5.21, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuPages, Version=1.11.5.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+      <HintPath>bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
@@ -70,10 +62,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="XanderUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\XanderUI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB.cs" />
@@ -89,12 +77,6 @@
     </Compile>
     <Compile Include="EditCatagories.Designer.cs">
       <DependentUpon>EditCatagories.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1Grid.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1Grid.Designer.cs">
-      <DependentUpon>Form1Grid.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBranchAdd.cs">
       <SubType>Form</SubType>
@@ -284,9 +266,6 @@
     <EmbeddedResource Include="EditCatagories.resx">
       <DependentUpon>EditCatagories.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1Grid.resx">
-      <DependentUpon>Form1Grid.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmBranchAdd.resx">
       <DependentUpon>frmBranchAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -387,6 +366,7 @@
     <EmbeddedResource Include="FrmUsers_kind.resx">
       <DependentUpon>FrmUsers_kind.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include=".editorconfig" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

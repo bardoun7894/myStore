@@ -26,17 +26,13 @@ namespace MyStore
             InitializeComponent();
             lblDate.Text = DateTime.Now.ToLongDateString();
             this.KeyPreview = true;
+            getTransno();
+            barcodeSearch.Enabled = true;
+            barcodeSearch.Focus();
+
 
         }
-        public String  numId()
-        {
-            return id;
-        }
-        public String numPrice()
-        {
-            return price;
-        }
-
+      
         private void panel10_Paint(object sender, PaintEventArgs e)
         {
 
@@ -88,6 +84,8 @@ namespace MyStore
             double discount = 0;
             try
             {
+                Boolean hasRecord = false;
+               
                 dataGridView1.Rows.Clear();
                 cn.Open();
                 cm = new SqlCommand("select c.id,c.pcode,p.pdesc, c.price , c.qty,c.disc,c.total from tblCart as c inner join tblProduct as p on c.pcode=p.pcode where transno like '"+lblTransno.Text+"'", cn);
@@ -100,6 +98,7 @@ namespace MyStore
                        total += double.Parse(dr["total"].ToString());
                         discount += double.Parse(dr["disc"].ToString());
                         dataGridView1.Rows.Add(i, dr["id"].ToString(), dr["pdesc"].ToString(), dr["price"].ToString(), dr["qty"].ToString(), dr["disc"].ToString(), dr["total"].ToString());
+                        hasRecord = true;
                     }
                 }
                 cm.ExecuteNonQuery();
@@ -108,7 +107,14 @@ namespace MyStore
            lblSaletotal.Text = total.ToString();
                 lblDiscount.Text = discount.ToString();
               getCartTotal();
-
+                if (hasRecord == true) { btnSet.Enabled = true;
+                    btnDisc.Enabled = true;
+                }
+                else
+                {
+                    btnSet.Enabled = false;
+                    btnDisc.Enabled = false;
+                }
             
 
             }
@@ -243,6 +249,62 @@ namespace MyStore
         {
             lblTime.Text = DateTime.Now.ToString("hh:MM:ss tt");
             lblDtN.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void btnCancelSales_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDailySales_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSettle_Click(object sender, EventArgs e)
+        {
+            frmSettlePayment fr = new frmSettlePayment();
+            fr.lblSale.Text = lblSaletotal.Text;
+            fr.ShowDialog();
+        }
+
+        private void btnTrans_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to open a new Tansaction",
+              "New Tansaction", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+               getTransno();
+               barcodeSearch.Enabled = true;
+               barcodeSearch.Focus();
+            }
+        }
+
+        private void btnSearchProd_Click(object sender, EventArgs e)
+        {
+
+            frmLookUp fr = new frmLookUp(this);
+
+            fr.ShowDialog();
+        }
+
+        private void btnDisc_Click(object sender, EventArgs e)
+        {
+            frmDiscount fr = new frmDiscount(this);
+            fr.lblId.Text = id;
+            fr.lblPrice.Text = price;
+
+            fr.ShowDialog();
+
         }
     }
 }
