@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MyStore
 {
     public partial class frmSettlePayment : Form
     {
-        public frmSettlePayment()
+        frmTransaction ft = new frmTransaction();
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cm = new SqlCommand();
+        SqlDataReader dr;
+        DBConnection dbCon = new DBConnection();
+        public frmSettlePayment(frmTransaction ftm)
         {
+            cn = new SqlConnection(dbCon.MyConnection());
             InitializeComponent();
+            ft = ftm; 
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -39,7 +47,7 @@ namespace MyStore
                 double sale = double.Parse(lblSale.Text);
                 double cash = double.Parse(textCash.Text);
                 double change = cash-sale;
-                textChange.Text ="dh"+ change.ToString( ) ;
+                textChange.Text =change.ToString( ) ;
 
             }
             catch (Exception ex)
@@ -110,7 +118,46 @@ namespace MyStore
 
         private void btnEnterN_Click(object sender, EventArgs e)
         {
-            textCash.Text += btnEnterN.Text;
+            
+            try
+            {
+                if (double.Parse(textChange.Text) < 0 || textCash.Text==String.Empty)
+                {
+                    MessageBox.Show("insufficient Amount. please enter the correct amount", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    for(int i = 0; i < ft.dataGridView1.Rows.Count; i++)
+                    { 
+                        cn.Open();
+              cm = new SqlCommand("update tblProduct set qty = qty - "+
+              int.Parse(ft.dataGridView1.Rows[i].Cells[5].Value.ToString())+" where pcode = '"+ ft.dataGridView1.Rows[i].Cells[2].Value.ToString() + "'",cn);
+              cm.ExecuteNonQuery(); 
+                        cn.Close();
+                        cn.Open();
+                          cm = new SqlCommand("update tblCart set status = 'Sold' where id like '" + ft.dataGridView1.Rows[i].Cells[1].Value.ToString()  + "'", cn);
+                          cm.ExecuteNonQuery();
+                        cn.Close();  
+                     }
+                    frmReceipt fr = new frmReceipt(ft);
+                    fr.loadReport(textCash.Text,textChange.Text);
+                    fr.ShowDialog();
+
+
+
+                    MessageBox.Show("Payment successfully Saved .", "Payment", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ft.getTransno();
+                    ft.loadCart();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
         }
     }
 }

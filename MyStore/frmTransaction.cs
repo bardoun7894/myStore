@@ -88,7 +88,7 @@ namespace MyStore
                
                 dataGridView1.Rows.Clear();
                 cn.Open();
-                cm = new SqlCommand("select c.id,c.pcode,p.pdesc, c.price , c.qty,c.disc,c.total from tblCart as c inner join tblProduct as p on c.pcode=p.pcode where transno like '"+lblTransno.Text+"'", cn);
+                cm = new SqlCommand("select c.id,c.pcode,p.pdesc, c.price , c.qty,c.disc,c.total from tblCart as c inner join tblProduct as p on c.pcode=p.pcode where transno like '"+lblTransno.Text+"' and status like 'Pending' ", cn);
                 //  dr = cm.ExecuteReader();
                 using (dr = cm.ExecuteReader())
                 {
@@ -97,7 +97,7 @@ namespace MyStore
                         i += 1;
                        total += double.Parse(dr["total"].ToString());
                         discount += double.Parse(dr["disc"].ToString());
-                        dataGridView1.Rows.Add(i, dr["id"].ToString(), dr["pdesc"].ToString(), dr["price"].ToString(), dr["qty"].ToString(), dr["disc"].ToString(), dr["total"].ToString());
+                        dataGridView1.Rows.Add(i, dr["id"].ToString(), dr["pcode"].ToString(), dr["pdesc"].ToString(), dr["price"].ToString(), dr["qty"].ToString(), dr["disc"].ToString(), dr["total"].ToString());
                         hasRecord = true;
                     }
                 }
@@ -189,7 +189,7 @@ namespace MyStore
             double vatable = sales-vat;
             lblVat.Text = vat.ToString("#,##0.00");
             lblVatable.Text = vatable.ToString("#,##0.00");
-            lblDisplay.Text = "dh"+sales.ToString() ;
+            lblDisplay.Text = sales.ToString()+"DH"  ;
 
             
         }
@@ -225,7 +225,7 @@ namespace MyStore
         {
             int i = dataGridView1.CurrentRow.Index;
             id = dataGridView1[1, i].Value.ToString();
-            price= dataGridView1[3, i].Value.ToString();
+            price= dataGridView1[4, i].Value.ToString();
 
 
         }
@@ -273,7 +273,7 @@ namespace MyStore
 
         private void btnSettle_Click(object sender, EventArgs e)
         {
-            frmSettlePayment fr = new frmSettlePayment();
+            frmSettlePayment fr = new frmSettlePayment(this);
             fr.lblSale.Text = lblSaletotal.Text;
             fr.ShowDialog();
         }
@@ -304,6 +304,11 @@ namespace MyStore
             fr.lblPrice.Text = price;
 
             fr.ShowDialog();
+
+        }
+
+        private void lblDisplay_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

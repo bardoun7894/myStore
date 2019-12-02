@@ -69,5 +69,10 @@ namespace MyStore
                 lblAmount.Text = "0.00";
             }
         }
+
+        private void lblPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
