@@ -49,9 +49,19 @@ namespace MyStore
             Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ManageSales_Click(object sender, EventArgs e)
         {
+            frmSoldItem f = new frmSoldItem();
+            f.panel1x.Visible = false;
+            f.TopLevel = false;
 
+            f.Dock = DockStyle.Fill;
+
+            panel3.Controls.Clear();
+            panel3.Controls.Add(f);
+
+            f.BringToFront();
+            f.Show();
 
         }
 
@@ -158,6 +168,20 @@ namespace MyStore
             frmTransaction f = new frmTransaction();
            // frmPOS f = new frmPOS();
             f.ShowDialog();
+        }
+
+        private void User_SettingClick(object sender, EventArgs e)
+        {
+            frmUserAccount f = new frmUserAccount();
+            f.TopLevel = false;
+
+            f.Dock = DockStyle.Fill;
+
+            panel3.Controls.Clear();
+            panel3.Controls.Add(f);
+
+            f.BringToFront();
+            f.Show();
         }
     }
 

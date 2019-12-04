@@ -64,7 +64,7 @@ namespace MyStore
         private void bfbEditBranches_Click(object sender, EventArgs e)
         {
             FrmEditUser fm = new FrmEditUser(lblid.Text,kind_user_id);
-            fm.MdiParent = frmMain.ActiveForm;
+            fm.MdiParent = frmSecurity.ActiveForm;
             fm.Show();
 
 

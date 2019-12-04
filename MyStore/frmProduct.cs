@@ -45,8 +45,7 @@ namespace MyStore
                 using (dr = cm.ExecuteReader())
  {
                     while (dr.Read())
-                    {
-                     
+                    { 
                         comboCategory.Items.Add(  dr[0].ToString());
                     }
                 }

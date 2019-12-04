@@ -57,7 +57,7 @@ namespace MyStore
             if (categorytext.Text != "")
             {
                 EditCatagories ec = new EditCatagories(lblId1.Text, categorytext.Text);
-                ec.MdiParent = frmMain.ActiveForm;
+                ec.MdiParent = frmSecurity.ActiveForm;
                 ec.Show();
 
             }
@@ -91,7 +91,7 @@ namespace MyStore
             if (categorytext.Text!="")
             {
                 EditCatagories ec = new EditCatagories(lblId1.Text, categorytext.Text);
-                ec.MdiParent = frmMain.ActiveForm;
+                ec.MdiParent = frmSecurity.ActiveForm;
                 ec.Show();
 
             }

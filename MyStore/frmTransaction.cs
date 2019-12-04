@@ -263,7 +263,11 @@ namespace MyStore
 
         private void btnDailySales_Click(object sender, EventArgs e)
         {
+            using (frmSoldItem fsi = new frmSoldItem())
+            {
 
+                fsi.ShowDialog();
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)

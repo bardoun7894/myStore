@@ -50,7 +50,7 @@ namespace MyStore
         private void الشاشةالرئيسيةToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
-            frmMain frm = new frmMain();
+            frmSecurity frm = new frmSecurity();
             frm.MdiParent = this;
             frm.Show();
         }

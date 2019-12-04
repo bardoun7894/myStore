@@ -647,6 +647,7 @@
             this.btnSearchProd.TabIndex = 48;
             this.btnSearchProd.Text = "     [F2]  Search Product ";
             this.btnSearchProd.UseVisualStyleBackColor = false;
+       
             // 
             // btnPassword
             // 

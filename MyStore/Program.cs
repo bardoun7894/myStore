@@ -23,7 +23,7 @@ namespace MyStore
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ori2());
+            Application.Run(new frmSecurity());
         }
     }
 }
