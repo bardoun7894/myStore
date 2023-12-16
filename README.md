@@ -18,9 +18,10 @@ This Point of Sale (POS) system is a comprehensive solution designed for retail 
 <img src="https://github.com/bardoun7894/myStore/blob/master/Untitled3.png" width="300px">
 
 <img src="https://github.com/bardoun7894/myStore/blob/master/Untitled4.png" width="300px">
+
+<img src="https://github.com/bardoun7894/myStore/blob/master/Untitled5.png" width="300px">
  
 </div>
-<img src="https://github.com/bardoun7894/myStore/blob/master/Untitled5.png" width="300px">
 
 <img src="https://github.com/bardoun7894/myStore/blob/master/Untitled6.png" width="300px">
 
