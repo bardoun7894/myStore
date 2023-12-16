@@ -1,2 +1,31 @@
-# myStore
-![Image of me]( https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80)
+ # C# POS System
+
+## Description
+
+This Point of Sale (POS) system is a comprehensive solution designed for retail businesses to efficiently manage sales transactions. Built with C#, this application offers a user-friendly interface for processing sales, tracking inventory, and generating receipts.
+
+## Features
+
+- Sale processing with shopping cart functionality
+- Inventory management
+- Product management (add, update, delete products)
+- Reporting tools for sales and inventory
+- User management with role-based access control
+
+## Screenshots 
+
+## Getting Started
+
+### Prerequisites
+
+Before running this POS system, you will need:
+
+- .NET Framework (Version specified)
+- SQL Server (Version specified)
+- Visual Studio (Recommended version)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/bardoun7894/myStore.git
