@@ -13,6 +13,13 @@ This Point of Sale (POS) system is a comprehensive solution designed for retail 
 - User management with role-based access control
 
 ## Screenshots 
+<div class="row" >
+
+ 
+</div>
+<img src="https://github.com/bardoun7894/myStore/blob/master/Untitled3.png" width="300px">
+
+<img src="https://github.com/bardoun7894/myStore/blob/master/Untitled4.png" width="300px">
 
 ## Getting Started
 
